@@ -17,13 +17,9 @@ if isHuman {
 //: Note that parentheses are optional for `if` statments in Swift.
 
 /*:
- ## `for` Loops
- There are two types of `for` loops in Swift. Apple explains the two as:
- * The `for-in` loop performs a set of statements for each item in a sequence.
- * The `for` loop performs a set of statements until a specific condition is met, typically by incrementing a counter each time the loop ends.
+ ## `for-in` Loops
+ The `for-in` loop performs a set of statements for each item in a sequence.
  */
-
-//: ### `for-in`
 
 let cities = ["New York", "Paris", "London", "Shanghai"]
 
@@ -40,23 +36,6 @@ for city in cities {
 for index in 1...3 {
     print("I can count to \(index)")
 }
-
-/*:
- ### `for`
- You can also define for loops in the following format:
- */
-
-for var index = 0; index < 3; index++ {
-    print("I can count to \(index)")
-}
-/*:
- This looks more like a standard Java for loop.
- The format is as follows:
- 
- for initialization; condition; increment {
- statements
- }
- */
 
 /*:
  ## `while` Loops
