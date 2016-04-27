@@ -1,3 +1,5 @@
+//: [Previous](@previous)
+
 import Foundation
 
 /*:
@@ -54,6 +56,7 @@ var dictionary = [String : Int]()
  Notice how the type of the values is Int. The value type can be any type you want. The key can also be any type you want. However, the key has to be a type that provides a value for its `hashValue` property. This is out of the scope of this tutorial, and there are rarely any situations that you will need a custom type to be the key type for a dictionary.
  */
 
+//: [Next](@next)
 
 
 

@@ -1,3 +1,5 @@
+//: [Previous](@previous)
+
 /*:
  # Initializers
  We have seen a couple of designated initializers in the Classes tutorial. In this tutorial, we will go more in depth and cover designated, convenience, required, and failable  initializers.
@@ -214,3 +216,5 @@ oddCow
 /*:
  For more details on what we covered in this tutorial, please visit [Apple's Initialization guide.](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Initialization.html)
  */
+
+//: [Next](@next)

@@ -1,3 +1,5 @@
+//: [Previous](@previous)
+
 import Foundation
 
 //: # Optionals in Swift
@@ -96,3 +98,5 @@ let petName = optionalString ?? "Fido"
 //: ### Recap
 //:
 //: In this Playground we have looked at some of the capabilities of optionals in Swift. Optionals are a fundamental part of Swift that allow us to be very clear about when variables contain values and when they do not. All of the rules associated with optionals can be confusing at first, but you will quickly gain an intuition by putting your knowledge into practice. The compiler will try to help you along the way, reminding you when you make mistakes.
+
+//: [Next](@next)

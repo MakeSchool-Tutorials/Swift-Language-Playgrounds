@@ -69,3 +69,6 @@ let Upcomingappversion = 1.1
 /*:
  For more details on what we covered in this tutorial, please visit [Apple's Variables and Constants guide.](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID310)
  */
+
+//: [Next](@next)
+

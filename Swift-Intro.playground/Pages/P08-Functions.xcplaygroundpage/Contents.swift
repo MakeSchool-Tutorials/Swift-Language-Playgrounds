@@ -1,3 +1,5 @@
+//: [Previous](@previous)
+
 import Foundation
 
 /*:
@@ -108,3 +110,4 @@ func resize2(fromWidth width1: Int, fromHeight height1: Int, toWidth width2: Int
 resize2(fromWidth: 20, fromHeight: 30, toWidth: 100, toHeight: 400)
 
 
+//: [Next](@next)

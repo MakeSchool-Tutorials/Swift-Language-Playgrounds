@@ -1,3 +1,5 @@
+//: [Previous](@previous)
+
 /*:
  # Types
  If you want to store a certain type of a value (like a String or an Int) in a variable, you can do it as follows:
@@ -58,7 +60,7 @@ var count = 5
 /*:
  # Type Casting
  
- Sometimes, you'll have an Int that you want to convert to a Double. Or maybe you'll have a Double that you'll want to convert to an Int, and get rid of its fractional component. You do this thusly:
+ Sometimes, you'll have an Int that you want to convert to a Double. Or maybe you'll have a Double that you'll want to convert to an Int, and get rid of its fractional component. Here's how you'd do this:
  */
 
 let three = Int(pi)
@@ -71,3 +73,6 @@ let three = Int(pi)
 let degrees = 60 // Int
 //let radians: Double = degrees  * pi / 180.0; // Don't do this!
 let radians: Double = Double(degrees)  * pi / 180.0; // Better
+
+
+//: [Next](@next)

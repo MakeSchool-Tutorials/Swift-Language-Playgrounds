@@ -1,3 +1,5 @@
+//: [Previous](@previous)
+
 /*:
  # Control Flow
  In this tutorial, we'll cover how to use the following statments in Swift: `if`, `for`, `while`, `switch`.
@@ -87,3 +89,5 @@ default:
 /*:
  For more details on what we covered here, please visit [Apple's control flow guide.](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/ControlFlow.html#//apple_ref/doc/uid/TP40014097-CH9-ID120)
  */
+
+//: [Next](@next)

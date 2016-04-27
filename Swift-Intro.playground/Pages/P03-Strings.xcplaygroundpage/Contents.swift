@@ -1,3 +1,5 @@
+//: [Previous](@previous)
+
 //: ## Strings in Swift
 //:
 //: You're probably familiar with the idea of strings from other programming languages you know. Simply put, strings are sequences of characters. Most often, strings contain text that will be displayed to users of your app. In this playground, we will talk about how you can use strings in Swift.
@@ -92,3 +94,5 @@ tigersAndMoreBears += "🐨🐨"
 //: ### Conclusion
 //:
 //: In this playground, you've learned about some of the basic and intermediate operations you can perform on Strings in Swift: creating literals, concatenating strings together and splitting them apart, string interpolation, and indexing into strings. There are many more things you can do with Strings, so explore the Swift standard library, and remember that you can also use methods from Cocoa's `NSString` as well. There are some great utilities for manipulating strings in there!
+
+//: [Next](@next)

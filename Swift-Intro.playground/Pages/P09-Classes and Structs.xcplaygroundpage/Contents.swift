@@ -1,3 +1,5 @@
+//: [Previous](@previous)
+
 /*:
  # Classes and Structures
  Classes and Structures will be the building blocks of your apps.
@@ -247,3 +249,5 @@ someSize.height
 /*:
  For more details on what we covered here, please visit [Apple's Classes and Structures guide.](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/ClassesAndStructures.html)
  */
+
+//: [Next](@next)
