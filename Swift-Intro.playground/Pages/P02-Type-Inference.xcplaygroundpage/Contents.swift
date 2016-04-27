@@ -30,7 +30,7 @@ var humans = 10
 
 /*:
  Even though we didn't use:
- 
+
  var humans : Int
  
  Swift automatically knows the type of our variable because we assigned it to `10`, which is clearly an integer value. Let's try assigning a decimal number to `humans`. Remove the comment in the line below to see the error:
@@ -54,3 +54,20 @@ var count = 5
 /*:
  For more details on what we covered in this tutorial, please visit [Apple's Type Inference guide.](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID322)
  */
+
+/*:
+ # Type Casting
+ 
+ Sometimes, you'll have an Int that you want to convert to a Double. Or maybe you'll have a Double that you'll want to convert to an Int, and get rid of its fractional component. You do this thusly:
+ */
+
+let three = Int(pi)
+
+/*:
+ Note that __Swift will NOT automatically cast types for you!__ If you need to store something as an Double and you use Ints to compute the value, you must then _cast_ the value to a Double.
+ */
+
+// grossly inaccurate degrees to radians calculation
+let degrees = 60 // Int
+//let radians: Double = degrees  * pi / 180.0; // Don't do this!
+let radians: Double = Double(degrees)  * pi / 180.0; // Better

@@ -139,7 +139,7 @@ struct Size {
 }
 
 /*:
- To use our struct, let's define two new subclasses of `Car` called `HybridCar` and `ElectricCar.
+ To use our struct, let's define two new subclasses of `Car` called `HybridCar` and `ElectricCar`.
  */
 
 class HybridCar: Car {
