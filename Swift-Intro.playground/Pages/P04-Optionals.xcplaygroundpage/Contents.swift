@@ -1,7 +1,5 @@
 //: [Previous](@previous)
-
 import Foundation
-
 //: # Optionals in Swift
 //:
 //: ### Introduction to Optionals
@@ -19,7 +17,6 @@ var maybeAnInt: Int? = 15
 maybeAnInt = nil
 
 //: Now `maybeAnInt` is `nil`, which is to say it has _no value_. If `maybeAnInt` had just been of type Int, we could not have set it to `nil`.
-
 //: ### Unwrapping an Optional
 //:
 //: When we get the value from an optional, we say we "unwrap" it. This is like opening the box and seeing whether there's anything inside. We can test whether an optional has a value by comparing the whole thing to `nil`. If it is not equal to `nil`, it contains a value. Woo hoo!
@@ -32,7 +29,6 @@ if maybeAnInt != nil {
 }
 
 //: Try changing the value of `maybeAnInt` from `nil` to something else above. Notice that the message only gets printed if it contains a value.
-
 //: ### Optional Binding
 //:
 //: A more compact way of testing and acting on an optional value is **optional binding**, where we test for the presence of an object and, if it exists, we create a new variable for this object in a narrower scope. Here, we "bind" the value of `maybeAnInt` (if present) to a new constant named `definitelyAnInt`, which only exists inside the `if/else` block, and print it:
@@ -94,7 +90,6 @@ let optionalString: String? = nil
 let petName = optionalString ?? "Fido"
 
 //: So if `optionalString` is not nil, we'll set `petName` to the value of `optionalString`. If it is nil, we'll set `petName` to "Fido".
-
 //: ### Recap
 //:
 //: In this Playground we have looked at some of the capabilities of optionals in Swift. Optionals are a fundamental part of Swift that allow us to be very clear about when variables contain values and when they do not. All of the rules associated with optionals can be confusing at first, but you will quickly gain an intuition by putting your knowledge into practice. The compiler will try to help you along the way, reminding you when you make mistakes.

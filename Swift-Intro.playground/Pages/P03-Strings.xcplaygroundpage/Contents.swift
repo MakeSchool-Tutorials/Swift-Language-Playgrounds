@@ -3,9 +3,7 @@
 //: ## Strings in Swift
 //:
 //: You're probably familiar with the idea of strings from other programming languages you know. Simply put, strings are sequences of characters. Most often, strings contain text that will be displayed to users of your app. In this playground, we will talk about how you can use strings in Swift.
-
 import Foundation
-
 //: ### String Literals
 //:
 //: The simplest kind of string to create is the **string literal**. This is a string whose value is known at compile-time, and it is written as a sequence of characters surrounded by double quotes:
@@ -21,7 +19,7 @@ let salutation = "Have a nice " + season + "!"
 
 //: Also, if you want to join an array of strings together, you can use the `joinWithSeparator` method of String to conjoin them with a delimiter of your choosing:
 
-let beetles = (["John", "Paul", "Ringo", "George"].joinWithSeparator(" and "))
+let beetles = ["John", "Paul", "Ringo", "George"].joinWithSeparator(" and ")
 
 //: You can go in the opposite direction, too, with a method borrowed from NSString:
 
@@ -36,7 +34,6 @@ var mutableString = "Call me"
 mutableString += " maybe"
 
 //: The `+=` operator adds the second string to the first. It's shorthand for `mutableString = mutableString + " maybe"`.
-
 //: ### String Interpolation
 //:
 //: One of the most powerful features of Strings in Swift is **string interpolation**. Interpolation allows us to incorporate the values of variables by name when constructing a string. References are made by surrounding the variable name with `\(` and `\)`. Let's revisit one of the examples above using string interpolation:
@@ -46,7 +43,7 @@ let farewell = "See you in the \(nextSeason)"
 
 //: But it doesn't stop there. In addition to variable names, you can include arbitrary expressions inside the interpolation segment:
 
-let radius:Double = 3
+let radius: Double = 3
 let complexInterpolation = "The area of my circle is \(M_PI * radius * radius)"
 
 //: ### Using `print` for Debugging

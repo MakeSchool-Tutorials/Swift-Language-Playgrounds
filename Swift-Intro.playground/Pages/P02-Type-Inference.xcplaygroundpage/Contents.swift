@@ -1,11 +1,10 @@
 //: [Previous](@previous)
-
 /*:
  # Types
  If you want to store a certain type of a value (like a String or an Int) in a variable, you can do it as follows:
  */
 
-var population : Int = 20
+var population: Int = 20
 
 /*:
  From now on, `population` will always be an Integer (shortened as `Int`). Let's test it out by trying to set `population` to a decimal number.
@@ -45,7 +44,6 @@ var humans = 10
  
  __Note: Make sure you comment the line above again before continuing.__
  */
-
 /*:
  To check the type that Swift has inferred, hold down the "option" key on your keyboard while clicking on `pi` or `count` below:
  */
@@ -56,7 +54,6 @@ var count = 5
 /*:
  For more details on what we covered in this tutorial, please visit [Apple's Type Inference guide.](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID322)
  */
-
 /*:
  # Type Casting
  

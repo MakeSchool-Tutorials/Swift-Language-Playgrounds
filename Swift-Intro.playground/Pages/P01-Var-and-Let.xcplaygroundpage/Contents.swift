@@ -2,7 +2,6 @@
  # Welcome to Swift!
  This is the first in a series of short tutorials designed to get you up to speed with Swift-specific topics. You all have seen at least one programming language before, so these tutorials are going to focus on things that are new or special to Swift. We love Swift and hope you will too!
  */
-
 /*:
  # Variables
  Variables associate a name to a value. Here's how you would declare a variable in Swift:
@@ -21,7 +20,13 @@ height
 /*:
  If you look at the right side of your screen, you will see the value of `height` has changed to 10. As long as you define a variable with the keyword `var`, you can change its value later on.
  */
-
+/*:
+ Note that variables are meant for you to hold values that can change. In this example, declaring a `var` that stays at one value may result in the Swift compiler giving you a yellow warning.
+ */
+var actuallyConstant = 3 // if you don't mean to re-assign, use constants!
+/*:
+ For values that you _want_ to be unchangeable, there's something called _constants_ in Swift.
+ */
 /*:
  # Constants
  Unlike variables, constants can not be changed. You can declare a constant using the word `let`:
@@ -43,8 +48,6 @@ let pi = 3.14 // Mmm, pi.
  
  To get rid of the error, comment it again by adding `//` to the beginning of that line.
  */
-
-
 /*:
  ## Naming Variables and Constants
  When naming variables and constants, most Swift programmers use a convention called camelCase. Here's how you can follow it:
@@ -64,8 +67,6 @@ let Upcomingappversion = 1.1
  * Start the first word in the variable name with a lowercase letter.
  * Start any subsequent word with an uppercase letter.
  */
-
-
 /*:
  For more details on what we covered in this tutorial, please visit [Apple's Variables and Constants guide.](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID310)
  */

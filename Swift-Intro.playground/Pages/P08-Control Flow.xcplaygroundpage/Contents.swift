@@ -40,6 +40,14 @@ for index in 1...3 {
 }
 
 /*:
+ If you want access to both the index number and the element value of a certain array, though, there's a way to do that too! Simply enumerate over `cities.enumerate()`, which gives you a _tuple_ containing the index and element.
+ */
+
+for (index, element) in cities.enumerate() {
+    print("at \(index): \(element)");
+}
+
+/*:
  ## `while` Loops
  A `while` loop keeps running as long as its condition is `true`.
  */

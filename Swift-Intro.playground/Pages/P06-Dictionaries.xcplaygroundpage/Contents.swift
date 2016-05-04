@@ -9,7 +9,7 @@ import Foundation
  Let's jump right in and define a dictionary variable.
  */
 
-var cities: [String :  String] = ["New York City" : "USA", "Paris" : "France", "London" : "UK"]
+var cities: [String: String] = ["New York City": "USA", "Paris": "France", "London": "UK"]
 
 /*:
  As you can see, the type of a dictionary depends on the type of its key and the type of its value. The general dictionary type is defined as [<key type> : <value type>]. In the example above, the key and the value are both Strings. The key represents the name of the city, and the value represents the country the city is in.
@@ -51,7 +51,7 @@ cities = [:]
 /*:
  To define a new empty dictionary:
  */
-var dictionary = [String : Int]()
+var dictionary = [String: Int]()
 /*:
  Notice how the type of the values is Int. The value type can be any type you want. The key can also be any type you want. However, the key has to be a type that provides a value for its `hashValue` property. This is out of the scope of this tutorial, and there are rarely any situations that you will need a custom type to be the key type for a dictionary.
  */
