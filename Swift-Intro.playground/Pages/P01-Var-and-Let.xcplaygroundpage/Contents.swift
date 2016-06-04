@@ -1,8 +1,5 @@
 /*:
- # Welcome to Swift!
- This is the first in a series of short tutorials designed to get you up to speed with Swift-specific topics. You have hopefully seen at least one programming language before, so these tutorials are going to focus on things that are new or special to Swift. We love Swift and hope you will too!
- */
-/*:
+ # Var and Let
  ## Variables
  Variables associate a name to a value. In Swift, variables are declared with the `var` keyword. */
 var height = 6
@@ -62,6 +59,7 @@ let Upcomingappversion = 1.1
  * Start any subsequent word with an uppercase letter.
  
  For more details on what we covered in this tutorial, please visit [Apple's documentation on variables and constants in Swift.](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID310)
- 
- [Next](@next)
  */
+/*:
+[Previous](@previous) | [Table of Contents](P00-Table-of-Contents) | [Next](@next)
+*/

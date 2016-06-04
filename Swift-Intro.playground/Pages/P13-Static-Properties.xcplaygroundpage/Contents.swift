@@ -1,4 +1,3 @@
-//: [Previous](@previous)
 import Foundation
 
 /*:
@@ -48,6 +47,6 @@ jessica.numStudents
  Do the same thing to the statements `bob.newStudents` and `harry.newStudents`. Notice as each student is initialized, the `numStudents` value increases by 1!
  
  */
-
-
-//: [Next](@next)
+/*:
+[Previous](@previous) | [Table of Contents](P00-Table-of-Contents) | [Next](@next)
+*/

@@ -1,5 +1,3 @@
-//: [Previous](@previous)
-
 import Foundation
 
 /*:
@@ -86,14 +84,6 @@ var item = mutableGroceryList[0]
  */
 let removedItem = mutableGroceryList.removeAtIndex(0)
 
-
-
-//: [Next](@next)
-
-
-
-
-
-
-
-
+/*:
+[Previous](@previous) | [Table of Contents](P00-Table-of-Contents) | [Next](@next)
+*/

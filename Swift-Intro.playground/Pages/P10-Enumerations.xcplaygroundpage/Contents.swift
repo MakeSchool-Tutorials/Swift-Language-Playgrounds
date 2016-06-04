@@ -1,5 +1,3 @@
-//: [Previous](@previous)
-
 import Foundation
 
 /*:
@@ -71,5 +69,6 @@ qr.rawValue
 /*:
  Notice that we didn't provide Swift with associated values for `UPC_E` and `QR_Code`. That's because for Int values specifically, Swift will automatically associate values with increasing numbers by 1. So, `UPC_E` has a `rawValue` of 2, and `QR_Code` has a `rawValue` of 3.
  */
-
-//: [Next](@next)
+/*:
+[Previous](@previous) | [Table of Contents](P00-Table-of-Contents) | [Next](@next)
+*/

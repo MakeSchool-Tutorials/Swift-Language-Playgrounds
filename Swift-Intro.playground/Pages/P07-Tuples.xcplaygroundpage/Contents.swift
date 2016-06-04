@@ -1,5 +1,3 @@
-//: [Previous](@previous)
-
 import Foundation
 
 /*:
@@ -39,5 +37,6 @@ let yCoord = coordinate.y
 /*:
  This syntax of named tuples is similar to the syntax of functions that you'll encounter later, so keep an eye out!
  */
-
-//: [Next](@next)
+/*:
+[Previous](@previous) | [Table of Contents](P00-Table-of-Contents) | [Next](@next)
+*/
