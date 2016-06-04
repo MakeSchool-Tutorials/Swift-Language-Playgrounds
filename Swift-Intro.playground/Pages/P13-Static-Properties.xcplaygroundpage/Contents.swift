@@ -1,10 +1,8 @@
-import Foundation
-
 /*:
- # Static Properties
+# Static Properties
  
- Sometimes, you don't want there to be one variable instance for each property that you define in a class. Take for instance:
- */
+Sometimes, you don't want there to be one variable instance for each property that you define in a class. Take for instance:
+*/
 
 class Student {
     var numStudents = 0

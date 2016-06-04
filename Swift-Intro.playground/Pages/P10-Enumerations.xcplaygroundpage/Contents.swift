@@ -1,12 +1,10 @@
-import Foundation
-
 /*:
- # Enumerations
+# Enumerations
  
- Sometimes, you want to make a series of categories of things in your program. The actual value of the categories themselves don't matter, just that they're seen as something distinct.
+Sometimes, you want to make a series of categories of things in your program. The actual value of the categories themselves don't matter, just that they're seen as something distinct.
  
- Enter `enum`. Here's an example of an enum, representing the 4 cardinal directions
- */
+Enter `enum`. Here's an example of an enum, representing the 4 cardinal directions
+*/
 
 enum CardinalDirection {
     case North, East, South, West

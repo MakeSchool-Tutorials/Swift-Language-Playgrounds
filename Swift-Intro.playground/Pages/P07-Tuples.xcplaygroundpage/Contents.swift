@@ -1,9 +1,7 @@
-import Foundation
-
 /*:
- # Tuples
+# Tuples
  
- So far, we've come across ways of packing multiples of data into entities – things like Arrays to pack an ordered list of elements of the same type, and Dictionaries to maintain a set of key-value pairs. But what if you just wanted a quick solution to pack together 2 or 3 things, without the values being necessarily of the same type?
+So far, we've come across ways of packing multiples of data into entities – things like Arrays to pack an ordered list of elements of the same type, and Dictionaries to maintain a set of key-value pairs. But what if you just wanted a quick solution to pack together 2 or 3 things, without the values being necessarily of the same type?
  
  Enter tuples: in Swift, when you group together a comma-separated list of expressions in parentheses, you automatically create a tuple containing it. For example, say we're tracking coordinates for a game of Battleship:
  */

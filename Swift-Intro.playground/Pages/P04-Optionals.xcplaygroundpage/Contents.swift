@@ -1,4 +1,3 @@
-import Foundation
 //: # Optionals in Swift
 //:
 //: ### Introduction to Optionals

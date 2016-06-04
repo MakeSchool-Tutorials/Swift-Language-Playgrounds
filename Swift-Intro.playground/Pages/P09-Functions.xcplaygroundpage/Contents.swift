@@ -1,9 +1,7 @@
-import Foundation
-
 /*:
- # Functions
- Programming is not powerful without functions. Functions are a block of code that perform a specific task. They exist to make code more organized, more readable, and more reusable. Let's dig in to see how it works!
- */
+# Functions
+Programming is not powerful without functions. Functions are a block of code that perform a specific task. They exist to make code more organized, more readable, and more reusable. Let's dig in to see how it works!
+*/
 /*:
  Here's how you declare a function with no parameters or return value.
  */

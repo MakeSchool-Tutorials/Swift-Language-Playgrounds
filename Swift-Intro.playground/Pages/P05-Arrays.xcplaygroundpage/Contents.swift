@@ -1,11 +1,9 @@
-import Foundation
-
 /*:
- # Arrays
+# Arrays
  
- Time to dive into arrays! In case you do not know what an array is, an array is an ordered list of items of the same type.
- Let's look at some examples!
- */
+Time to dive into arrays! In case you do not know what an array is, an array is an ordered list of items of the same type.
+Let's look at some examples!
+*/
 
 let groceryList: [String] = ["eggs", "milk"]
 

@@ -2,7 +2,6 @@
  # Initializers
  We have seen a couple of designated initializers in the Classes tutorial. In this tutorial, we will go more in depth and cover designated, convenience, required, and failable  initializers.
  */
-
 /*:
  ## Designated Initializers
  Let's start with designated initializers.

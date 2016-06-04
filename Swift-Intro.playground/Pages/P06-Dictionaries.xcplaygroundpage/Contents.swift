@@ -1,5 +1,3 @@
-import Foundation
-
 /*:
  # Dictionaries
  A Dictionary is Collection data structure which stores multiple values, where each value has a unique key associated with it. (If you know Python, you may be familiar with Python dictionaries; in Java these are called HashMaps.) Unlike arrays, dictionaries do not keep the values in any order. Dictionaries are helpful in a situation where you want to quickly look up a value based on its unique key.
