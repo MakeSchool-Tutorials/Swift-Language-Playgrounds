@@ -3,6 +3,7 @@
 Programming is not powerful without functions. Functions are a block of code that perform a specific task. They exist to make code more organized, more readable, and more reusable. Let's dig in to see how it works!
 */
 /*:
+ ## Declaration
  Here's how you declare a function with no parameters or return value.
  */
 func doNothing() {
@@ -23,11 +24,11 @@ func returnsSomething(name: String) -> String {
     return name + "!"
 }
 /*:
+ - experiment:
  Try commenting out the code within the function. What happens?
  
  The compiler gives an error, becuase the function is telling the caller that it will return a String, but the function never actually used the "return" keyword to send something back. The compiler prevents this code from running because it would eventually crash your program!
  */
-
 /*:
  In order to take more than one parameter, you simply separate the inputs with a comma:
  */
@@ -35,7 +36,7 @@ func difference(num1: Int, num2: Int) -> Int {
     return num1 - num2
 }
 /*:
- Sometimes, you want a function to return more than one value back. However, in many programming languages, this is not possible and workaround strategies have been used. Well, no more! In Swift you can return multiple values back to the caller using tuples. A tuple is a data structure with a specific number of items as well as a specific sequence of those items. Let's look at a function that returns multiple items using a tuple.
+ Sometimes, you want a function to return more than one value. However, in many programming languages, this is not possible and workaround strategies have been used. Well, no more! In Swift you can return multiple values back to the caller using tuples. A tuple is a data structure with a specific number of items as well as a specific sequence of those items. Let's look at a function that returns multiple items using a tuple.
  
  In this function, we send in an array of integers as input, and expect 2 values to be returned. Notice the syntax: for the returned value, we have 2 items, first and last. They have their types declared, and they are wrapped inside parentheses. Furthermore, in order to return a tuple, the function simply wraps the items it wants to return inside parantheses.
  */
@@ -49,7 +50,6 @@ func firstLast(array: [Int]) -> (first: Int, last: Int) {
  */
 var numbers = [10, 30, 13, 5, 9]
 let result = firstLast(numbers)
-
 /*:
  There are a few ways you can retrieve values from the tuple returned from the function:
  */
@@ -62,15 +62,16 @@ let val1 = result.first
  */
 let val2 = result.0
 /*:
- There is a totally different way to get back the values as well. You can define your own tuple items, and they will be bound to the values returned by the function. In the line below, item1 is bound to the value of the first item returned by the function. Note that they do not need to have their types defined. Why? because Swift is smart enough to realize that you are calling firstLast function which returns 2 integers, so as a programmer, you obviously wanted item1 and item2 to be integers as well. Cool, huh?
+ There is a totally different way to get back the values as well. You can define your own tuple items, and they will be bound to the values returned by the function. In the line below, item1 is bound to the value of the first item returned by the function. Note that they do not need to have their types defined. Why? because Swift is smart enough to realize that the function you are calling returns 2 integers, so it figures that you wanted item1 and item2 to be integers as well. Cool, huh?
  */
 let (item1, item2) = firstLast(numbers)
 print(item1)
 print(item2)
+/*: */
 /*:
- All right, time to talk about an advanced topic: internal and external parameter names. Coming from another programming language, you probably have not heard about such a thing, but no worries, once you understand why it is needed, you will be using it everywhere in your code.
- */
-/*:
+ ## Parameter Names
+ All right, time to talk about an advanced topic: internal and external parameter names. Coming from other programming languages, you may not have heard such a thing, but no worries, once you understand why it is needed, you will be using it everywhere in your code.
+ 
  Let's first discuss the syntax. As you can see below, first you define the external name, followed by the internal name. The body of the function only sees the internal name and not the external name. Similarly, a caller will only see the external name and not the internal name.
  */
 func someFunc(externalName internalName: Int) -> Int {
@@ -81,6 +82,7 @@ func someFunc(externalName internalName: Int) -> Int {
  */
 let res = someFunc(externalName: 40)
 /*:
+ - experiment:
  Try uncommenting the line below. What error do you get?
  */
 //let res2 = someFunc(40)
@@ -104,7 +106,7 @@ func resize2(fromWidth width1: Int, fromHeight height1: Int, toWidth width2: Int
  Look at how much more readable the line below is! If a programmer comes back later on to this code, she knows exactly what is happening. She does not have to go to look at the definition of the function to figure out what is happening on this line. Everything is explained right there in one line. It is obvious that the code is resizing (something) from width 20 to width 100 and from height 30 to height 400. This is all thanks to the power of internal/external parameter names!
  */
 resize2(fromWidth: 20, fromHeight: 30, toWidth: 100, toHeight: 400)
-
+/*: */
 /*:
 [Previous](@previous) | [Table of Contents](P00-Table-of-Contents) | [Next](@next)
 */
