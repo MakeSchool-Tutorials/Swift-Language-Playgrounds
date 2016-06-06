@@ -1,9 +1,8 @@
 /*:
 # Static Properties
  
-Sometimes, you don't want there to be one variable instance for each property that you define in a class. Take for instance:
+Sometimes you will want one of your class's properties to have a shared value between all instances of that class.
 */
-
 class Student {
     var numStudents = 0
     let name: String
@@ -13,18 +12,15 @@ class Student {
         self.numStudents += 1
     }
 }
-
 /*:
  Here, we want `numStudents` to increment by 1 each time a new Student is initialized. But, you'll notice that because there's a `numStudents` variable initialized for each student, the `numStudents` is 1 for all instances:
  */
-
 let bob = Student(name: "Bob")
 bob.numStudents
 let harry = Student(name: "Harry")
 harry.numStudents
 let jessica = Student(name: "Jessica")
 jessica.numStudents
-
 /*:
  This is where _static properties_ come in. Inside of a class, you can mark a variable as static, like this:
  
