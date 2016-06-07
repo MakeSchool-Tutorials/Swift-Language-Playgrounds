@@ -39,33 +39,8 @@ Both enumerations come with an `allValues()` function, which returns an array co
  
 So now, using the above `enum` code, create a Card `struct` with `suit` and `rank` properties, and a contstructor that accepts `suit` and `rank` parameters.
 */
-/* Place your code below! */
+/* Place your code here! */
 
-enum Rank: Int {
-    case Two = 2, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King, Ace
-    
-    static func allValues() -> [Rank] {
-        return [Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King, Ace]
-    }
-}
-
-enum Suit: Int {
-    case Spades = 4, Hearts = 3, Diamonds = 2, Clubs = 1
-    
-    static func allValues() -> [Suit] {
-        return [Spades, Hearts, Diamonds, Clubs]
-    }
-}
-
-struct Card {
-    let rank: Rank
-    let suit: Suit
-    
-    init(rank: Rank, suit: Suit) {
-        self.rank = rank
-        self.suit = suit
-    }
-}
 /*:
 ## Deck Class
  
@@ -73,29 +48,8 @@ Now that you've created your card class, it's time to create a `Deck` to hold th
  
 To start, your deck should have an empty constructor. Inside the constructor, create all 52 cards, and place them in the ordered data structure.
 */
-/* Place your code below! */
-import Foundation
+/* Place your code here! */
 
-class Deck {
-    private var deck: [Card] = []
-    
-    init() {
-        for suit in Suit.allValues() {
-            for rank in Rank.allValues() {
-                deck.append(Card(rank: rank, suit: suit))
-            }
-        }
-    }
-    
-    func drawOne() -> Card? {
-        if deck.count > 1 {
-            let randomIndex:Int = Int(arc4random_uniform(UInt32(deck.count)))
-            return self.deck.removeAtIndex(randomIndex)
-        } else {
-            return nil
-        }
-    }
-}
 /*:
 Now that you have a `Deck` it's time to add some functionality. Create a a function in your `Deck` class above called `drawOne()`. `drawOne()` should return a random card from the deck. Don't forget to remove that card from your internal deck data structure! 
  
@@ -140,32 +94,8 @@ Once you've implemented `drawOne()`, uncomment the following code to test it out
  
  You can make comparing the cards easier if you assign _raw values_ to the enumerations. Check out the [enumerations playground](P10-Enumerations) for a refresher on how to do that.
  */
-/* Place your code below! */
+/* Place your code here! */
 
-func isComputerWinner(computerCard: Card, playerCard: Card) -> Bool {
-    if (computerCard.rank.rawValue == playerCard.rank.rawValue) {
-        if computerCard.suit.rawValue > playerCard.suit.rawValue {
-            return true
-        } else {
-            return false
-        }
-    } else if computerCard.rank.rawValue > playerCard.rank.rawValue {
-        return true
-    } else {
-        return false
-    }
-}
-
-func printResult(winnerIsComputer: Bool, winningCard: Card) {
-    print("The \(winnerIsComputer ? "computer" : "player") won with the \(winningCard.rank) of \(winningCard.suit)!")
-}
-
-let deck = Deck()
-let computerCard = deck.drawOne()!
-let playerCard = deck.drawOne()!
-
-let computerWon = isComputerWinner(computerCard, playerCard: playerCard)
-printResult(computerWon, winningCard: computerWon ? computerCard : playerCard)
 
 /*:
  - important:
