@@ -40,5 +40,5 @@ array[1].post()
  To learn more about protocols, you can visit Apple's official documentation [here](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Protocols.html).
  */
 /*:
-[Previous](@previous) | [Table of Contents](P00-Table-of-Contents)
+[Previous](@previous) | [Table of Contents](P00-Table-of-Contents) | [Next](@next)
 */

@@ -16,5 +16,6 @@
         <page name='P12-Initializers'/>
         <page name='P13-Static-Properties'/>
         <page name='P14-Protocols'/>
+        <page name='P15-Challenge'/>
     </pages>
 </playground>
