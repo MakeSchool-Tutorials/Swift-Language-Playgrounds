@@ -15,10 +15,8 @@ class Student {
 /*:
  Here, we want `numStudents` to increment by 1 each time a new Student is initialized. But, you'll notice that because there's a `numStudents` variable initialized for each student, the `numStudents` is 1 for all instances:
  */
-let bob = Student(name: "Bob")
-bob.numStudents
-let harry = Student(name: "Harry")
-harry.numStudents
+let john = Student(name: "John")
+john.numStudents
 let jessica = Student(name: "Jessica")
 jessica.numStudents
 /*:
@@ -28,7 +26,7 @@ jessica.numStudents
         static var numStudents = 0
      }
      
- Try making this change to the above code now.
+ Try making this change to the above code in the `Student` class now.
  
  ## Errors!
  
@@ -38,7 +36,7 @@ jessica.numStudents
  
     Student.numStudents += 1
  
- Do the same thing to the statements `bob.newStudents` and `harry.newStudents`. Notice as each student is initialized, the `numStudents` value increases by 1!
+ Do the same thing to the statements `john.numStudents` and `jessica.numStudents`. Notice as each student is initialized, the `numStudents` value increases by 1!
  
  */
 /*:

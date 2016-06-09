@@ -40,7 +40,7 @@ playerPosition
 /*:
  ## Enumerations with Raw Values
  
- In the previous example, the underlying type of `CardinalDirection` didn't matter – becuase it was an enum, we couldn't convert it to an Int value or similar. But what if we wanted to associate different values to our enums?
+ In the previous example, the underlying type of `CardinalDirection` didn't matter – because it was an enum, we couldn't convert it to an Int value or similar. But what if we wanted to associate different values to our enums?
  
  You can declare an enum with an _implicitly assigned raw value_:
  */

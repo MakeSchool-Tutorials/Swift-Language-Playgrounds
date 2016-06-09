@@ -32,7 +32,7 @@ let anotherEmptyArray: [String] = []
 let numberOfItems = groceryList.count
 print("the grocery list contains \(numberOfItems) items.")
 /*: 
- Notice that, just like Java's `.length` property, this is not a property, not a method.
+ Notice that, just like Java's `.length` property, this is a property, not a method.
  Sometimes you just want to know whether the array is empty or not:
  */
 if groceryList.isEmpty {

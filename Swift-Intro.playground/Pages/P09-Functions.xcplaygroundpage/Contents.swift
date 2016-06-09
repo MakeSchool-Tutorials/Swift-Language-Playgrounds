@@ -27,7 +27,7 @@ func returnsSomething(name: String) -> String {
  - experiment:
  Try commenting out the code within the function. What happens?
  
- The compiler gives an error, becuase the function is telling the caller that it will return a String, but the function never actually used the "return" keyword to send something back. The compiler prevents this code from running because it would eventually crash your program!
+ The compiler gives an error, because the function is telling the caller that it will return a String, but the function never actually used the "return" keyword to send something back. The compiler prevents this code from running because it would eventually crash your program!
  */
 /*:
  In order to take more than one parameter, you simply separate the inputs with a comma:
@@ -62,7 +62,7 @@ let val1 = result.first
  */
 let val2 = result.0
 /*:
- There is a totally different way to get back the values as well. You can define your own tuple items, and they will be bound to the values returned by the function. In the line below, item1 is bound to the value of the first item returned by the function. Note that they do not need to have their types defined. Why? because Swift is smart enough to realize that the function you are calling returns 2 integers, so it figures that you wanted item1 and item2 to be integers as well. Cool, huh?
+ There is also a totally different way to get back the values. You can define your own tuple items, and they will be bound to the values returned by the function. In the line below, item1 is bound to the value of the first item returned by the function. Note that they do not need to have their types defined. Why? because Swift is smart enough to realize that the function you are calling returns 2 integers, so it figures that you wanted item1 and item2 to be integers as well. Cool, huh?
  */
 let (item1, item2) = firstLast(numbers)
 print(item1)

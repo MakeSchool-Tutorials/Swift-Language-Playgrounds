@@ -46,7 +46,7 @@ So now, using the above `enum` code, create a Card `struct` with `suit` and `ran
  
 Now that you've created your card class, it's time to create a `Deck` to hold them. A standard 52 card deck has one card of each rank and suit pair. The cards in a deck must also be ordered: can you think of a data structure to hold them?
  
-To start, your deck should have an empty constructor. Inside the constructor, create all 52 cards, and place them in the ordered data structure.
+To start, your deck should have an empty initializer. Inside the initializer, create all 52 cards, and place them in the ordered data structure.
 */
 /* Place your code here! */
 
@@ -77,7 +77,7 @@ Once you've implemented `drawOne()`, uncomment the following code to test it out
  */
 /*:
 ## A Simple Game
- Now it's time to make a simple game. Create a deck, and draw one card for you (the player) and one card for the computer. The highest card wins! In this game, a Two is the lowest card and Ace. is the highest. If both players draw the same rank card, then suit is used to determine the winner. Spades is the best suit, followed by Hearts, Diamonds, then Clubs.  
+ Now it's time to make a simple game. Create a deck, and draw one card for you (the player) and one card for the computer. The highest card wins! In this game, a Two is the lowest card and Ace is the highest. If both players draw the same rank card, then suit is used to determine the winner. Spades is the best suit, followed by Hearts, Diamonds, then Clubs.
  
  You should print out the result of the game like this:
     
