@@ -37,7 +37,7 @@ Hopefully the answer you came up with is *enumerations*. Go ahead and use the fo
 Both enumerations come with an `allValues()` function, which returns an array containing each of the enumeration values. This function will be helpful later, when you create your `Deck` class.
 
  
-So now, using the above `enum` code, create a Card `struct` with `suit` and `rank` properties, and a contstructor that accepts `suit` and `rank` parameters.
+So now, using the above `enum` code, create a Card `struct` with `suit` and `rank` properties, and an initializer that accepts `suit` and `rank` parameters.
 */
 /* Place your code here! */
 
@@ -77,7 +77,7 @@ Once you've implemented `drawOne()`, uncomment the following code to test it out
  */
 /*:
 ## A Simple Game
- Now it's time to make a simple game. Create a deck, and draw one card for you (the player) and one card for the computer. The highest card wins! In this game, a Two is the lowest card and Ace is the highest. If both players draw the same rank card, then suit is used to determine the winner. Spades is the best suit, followed by Hearts, Diamonds, then Clubs.
+ Now it's time to make a simple game. Create a deck, and draw one card for you (the player) and one card for the computer. The highest card wins! In this game, a Two is the lowest card and Ace is the highest card. If both players draw the same rank card, then suit is used to determine the winner. Spades is the best suit, followed by Hearts, Diamonds, then Clubs.
  
  You should print out the result of the game like this:
     
