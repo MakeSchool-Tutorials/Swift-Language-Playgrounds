@@ -199,6 +199,76 @@ oddCow
  
  For more details on what we covered in this tutorial, please visit [Apple's initialization guide.](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Initialization.html)
  */
+
+
+
+
+
+
+/*: 
+ 
+ ### Challenge 
+ 
+ Racing games are hot on the app store we better make one fast! You will have all kinds vehicles in your game that will share some features. Better create a Car class. A car should have properties for speed, fuel, and color. Speed: String, fuel: Int, color: String.
+ 
+ Next create a subclass for each of the vehicle types listed below. These vehicles will all have speed, fuel and color since they inherit these from Car. They will also have values that are set when they are initialized.
+ 
+ a. Race Car - Race cars are always fast
+ b. Tow Truck - Tow trucks are always slow
+ c. Delivery Truck - Delivery trucks are slow and brown. 
+ 
+ Use initializers to make sure that each of the subclasses get the proper initial values.
+
+ 
+ For this exercise, determine what kinds of values should be initialized in car. Then, determine the different characteristics unique to each type of vehicle. Determine what kinds of instantiation could be applied to each variable. For example, an ambulance could have a siren variable that could be instantiated with a convenience initializer. Make sure to use at least 3 convenience, 2 required, and 2 failable instantiations.
+ */
+
+
+
+
+
+
+
+
+/*: 
+ ### Answer
+ */
+
+
+
+/*
+class Car {
+    var speed: String!
+    var fuel = 100
+    var color: String!
+}
+
+class RaceCar: Car {
+    init(color: String) {
+        super.init()
+        self.color = color
+        self.speed = "Fast"
+    }
+}
+
+class TowTruck: Car {
+    init(color: String) {
+        super.init()
+        self.color = color
+        self.speed = "Slow"
+    }
+}
+
+class DeliveryTruck: Car {
+    override init() {
+        super.init()
+        self.color = "Brown"
+        self.speed = "Slow"
+    }
+}
+*/
+
+
 /*:
 [Previous](@previous) | [Table of Contents](P00-Table-of-Contents) | [Next](@next)
 */

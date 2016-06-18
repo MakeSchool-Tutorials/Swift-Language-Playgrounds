@@ -71,6 +71,76 @@ month.rawValue
  ## More Enumeration Techniques
  Enumerations have a ton of features, and are very powerful in Swift.  Far more powerful than in most languages, in fact. To see what else is possible, check out [Apple's documentation on enumerations.](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Enumerations.html) 
  */
+
+
+
+
+
+/*: 
+ 
+ ### Challenge
+ 
+ The core use of an enumeration is creating named references to values. While you could use: 0, 1, 2, 3 to represent North, East, South, and West. It's much easier to read and write code that uses names like: North, East, South, and West. 
+ 
+- 1) Imagine you want to create Tic Tac Toe. This is a game played on a three by three grid. Each grid space can be empty, or contain an X or O. An enum would be great for this. Write an enum to keep track of grid content for Tic Tac Toe.
+ 
+- 2) You're making a game. You need to keep track of the direction your player can move. Make enum to keep track of directions Up, Right, Down, and Left.
+ 
+- 3) Make an array that contains a completed game of Tic Tac Toe, where X have won. This means there needs to be three Xs in a row.
+ 
+- 4) Imagine you are creating an app that will organize todo items. You want to color code them and would rather use an enum rather than the raw color value. Since writing .Orange, is easier and more descriptive than using something like #ff4411. Create an enum containg the colors: Red, Orange, Blue, and Green.
+ 
+ */
+
+
+// Write your challenge code here:
+
+
+
+
+
+
+
+/*: 
+ ### Answer
+ */
+
+
+/*
+// 1 
+enum GridSquare {
+    case Empty, X, O
+}
+
+
+
+// 2 
+enum Direction {
+    case Up, Right, Down, Left
+}
+
+
+
+// 3
+var ticTacToeBoard: [[GridSquare]] = [[.O, .X, .X],
+                                      [.O, .X, .O],
+                                      [.X, .O, .Empty]]
+
+// Notice th board is type [[GridSquare]]. This is says the array contains arrays,
+// and these nested arrays contain GridSquares.
+ 
+ 
+// 4 
+ enum Colors {
+    case Red, Orange, Blue, Green
+ }
+
+*/
+
+
+
+
+
 /*:
 [Previous](@previous) | [Table of Contents](P00-Table-of-Contents) | [Next](@next)
 */

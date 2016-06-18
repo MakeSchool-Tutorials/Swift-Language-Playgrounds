@@ -98,6 +98,61 @@ let petName = optionalString ?? "Fido"
  
 In this Playground we have looked at some of the capabilities of optionals in Swift. Optionals are a fundamental part of Swift that allow us to be very clear about when variables contain values and when they do not. All of the rules associated with optionals can be confusing at first, but you will quickly gain an intuition by putting your knowledge into practice. The compiler will try to help you along the way, reminding you when you make mistakes.
  */
+
+
+
+
+/*: 
+
+ ## Challenge
+ 
+ Optionals are variables that some times have a value and sometimes do not. When This can occur more often than you would think. Anytime your app reaches out to internet, you can't be sure that you will get the results you are expecting, expact an optional. 
+ 
+ - 1) Imagine your app will display a username if availble. If no user is signed in you can display their name. This might be a good place for an optional. Define a variable named username, and make it type String? (optional)
+ 
+- 2) Print the value of username. You should get nil. 
+ 
+- 3) Set the value of username to some name.
+ 
+- 4) Print username again. You should see something like: Optional("Joe")
+ 
+- 5) Not that username has a value you can safely unwrap it with the !. Print username again, and unwrap.
+ 
+- 6) Use the nil-coalescing operator to set the value of a variable to the value of username, or to "Anonymous" if username is nil.
+ 
+*/
+
+
+// Write your answers here:
+
+
+
+
+
+
+
+
+
+
+/*: 
+ 
+ ## Answers
+ 
+ */
+// Your answer should look similar to this
+var username: String?   // 1
+print(username)         // 2
+username = "Joe"        // 3
+print(username)         // 4
+print(username!)        // 5
+
+let message = username ?? "Anonymous" // 6
+
+
+
+
+
+
 /*:
 [Previous](@previous) | [Table of Contents](P00-Table-of-Contents) | [Next](@next)
 */

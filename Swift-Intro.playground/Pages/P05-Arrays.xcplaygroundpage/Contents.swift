@@ -81,6 +81,106 @@ var firstItem = mutableGroceryList[0]
  Of course, you have the ability to remove an item. This will return the removed item.
  */
 let removedItem = mutableGroceryList.removeAtIndex(0)
+
+
+
+
+
+
+
+
+
+/*: 
+
+ ## Challenge
+ 
+ Arrays are great, you will find that you will use them everywhere when you write programs of your own. An array is a list of things. Think about your life and how often you create lists. You do this often for even the smallest tasks. Keep track of how often you create lists through out the day.
+ 
+In software you will create lists in many situations. You will find you are often creating lists of objects, strings, numbers. Any time you need to keep track of more than one of the same type of thing you'll want to use an array. 
+
+Imagine you are working on a farm and need to create an app to help with day to day chores.
+ 
+- 1) Life on the farm is hard! Every day you need to: 
+ 
+ * "Wake Up"
+ * "Wash the dishes"
+ * "milk the cows"
+ 
+ Create an array that contains Strings. Define the initial value of the of the array so that it contains the following items above.
+ 
+- 2) Well, Ma's given you more chores. Append "Churn butter" to the end of your list.
+ 
+- 3) Turns out you also need to "Call the Cows". This needs to happen at the end of the day. Add it to the end of your array. 
+ 
+- 4) Often you need to choose an item from an array. You just got up, your app needs to print a message with the first task! Print the first task in the array. 
+ 
+- 5) You'll need to print the next task time each time you tell your app the current task has been completed. A good way to do this is to create a variable. Create a variable named currentTask. Set the value to 0 and make sure the type is Int. Remeber the index of an element in an array is always an Int. 
+ 
+- 6) Print the item in the array at currentIndex. 
+ 
+- 7) Add 1 to currentIndex
+ 
+- 8) Print the item in the array at currentIndex again.
+ 
+- 9) Did you "Feed the Chickens"? this always happens after breakfast. Add this after "wash dishes".
+ 
+- 10) Add 1 to currentIndex
+ 
+- 11) Print the item in the array at currentIndex.
+ 
+- 12) Print the entire array
+ 
+*/
+
+
+
+
+
+/*: 
+
+ ### Answer
+ 
+*/
+
+
+/*
+ 
+// 1
+var array = ["Wake Up", "Wash the dishes", "milk the cows"]
+
+ // 2
+array.append("Churn butter")
+
+ // 3
+array += ["Call the Cows"]
+
+ // 4
+print(array[0]) // Remember 0 is the first index!
+
+ // 5
+var currentTask = 0
+
+ // 6
+print(array[currentTask])
+
+ // 7
+currentTask += 1
+
+ // 8
+print(array[currentTask])
+
+ // 9
+array.insert("Feed the Chickens", atIndex: 2)
+
+ // 10
+currentTask += 1
+
+ // 11
+print(array[currentTask])
+*/
+
+
+
 /*:
 [Previous](@previous) | [Table of Contents](P00-Table-of-Contents) | [Next](@next)
 */

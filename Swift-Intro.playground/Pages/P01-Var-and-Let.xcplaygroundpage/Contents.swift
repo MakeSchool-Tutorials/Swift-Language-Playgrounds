@@ -60,6 +60,103 @@ let Upcomingappversion = 1.1
  
  For more details on what we covered in this tutorial, please visit [Apple's documentation on variables and constants in Swift.](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID310)
  */
+
+
+
+
+/*: 
+ ## Challenges!
+ Use the conscepts covered in this section to test your knowledge and expand
+ your skills.
+ 
+ Consider each of the following situations and ask yourself whether it is best to use a var (mutable variable) or let (constant variable).
+ 
+ - 1) We want to store information about the number of cars parked in a parking lot daily.
+ 
+ - 2) We want to record the number of units in an apartment complex.
+ 
+ - 3) Record your highscore in a game.
+ 
+ - 4) Record the number of letters in an alaphabet.
+ 
+*/
+
+
+// Write your variables to describe the questions above here. 
+
+// 1) Define a variable to hold the number of cars parked in a parking lot, there 4 cars parked at the mement.
+
+
+
+
+// 2) Define variable that holds the number of units in a building on Market St. There 12 units in the building.
+
+
+
+
+// 3) Define a variable that will hold the high score in the new game you are making. The current value is 5000. (You are going to break that score when you finsih this tutorial)
+
+
+
+
+// 4) Define a variable that holds the number of letters in the alphabet.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*: 
+ 
+ ## Answers for challenge
+ 
+ - A: var 
+    Why? the number of cars in the lot will change throughout the day. Using let here would not allow new cars to park or allow people to retrieve cars already parked.
+ 
+ - A: let Why? In general the number of units in a building will not change. (unless it is an app that creates an apartment, like TinyTower!)
+ 
+ - A: var Why? Your high score might be different each time you play, hopefully it's improving over time!
+ 
+ - A: let Why? There are 26 letters in the alphabet this number will change.
+ 
+ */
+
+// Your answers should look something like these. The names do not have to match, you should have used let and var in the same places:
+
+/*
+var numberOfCars = 4
+let numberOfUnits = 12
+var highScore = 5000
+let numberOfLetters = 26
+*/
+
+/*:
+ 
+ ## Bonus
+ Notice all of the variables begin with a letter. You can not begin a variable name with a number or other character like: !@#$%^&*+=-. You can use Emojis.
+ 
+ Notice variable names always begin with a lowercase letter. This is a convention rather than a requirement. By convention class names begin with an upppercase letter. 
+ 
+ Notice each of the names is made up of more than one word. Example: numberOfUnits is made of number Of Units. Variable names can't contain spaces, using an uppercase letter at the word break helps make the words readable. This is called camel case.
+ 
+*/
+
+
+
 /*:
 [Previous](@previous) | [Table of Contents](P00-Table-of-Contents) | [Next](@next)
 */
