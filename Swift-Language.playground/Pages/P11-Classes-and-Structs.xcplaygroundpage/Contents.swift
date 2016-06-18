@@ -211,6 +211,7 @@ someSize.height
     5. You're making an app that keeps track of the weather. You need to wrap the weather data in a conveient package to pass around to various elements in your for display. Create a `struct` that has the following properties: `temperature`, `windSpeed`, `cloudPercentage`, `weatherDescription`.
  
  */
+// Write your challenge code here:
 
 
 

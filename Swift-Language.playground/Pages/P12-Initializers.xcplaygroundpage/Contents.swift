@@ -208,21 +208,26 @@ oddCow
 
 /*: 
  
- ### Challenge 
+ ### Challenge
  
- Racing games are hot on the app store we better make one fast! You will have all kinds vehicles in your game that will share some features. Better create a Car class. A car should have properties for speed, fuel, and color. Speed: String, fuel: Int, color: String.
+ Use the concepts covered in this section to test your knowledge and expand your skills.
  
- Next create a subclass for each of the vehicle types listed below. These vehicles will all have speed, fuel and color since they inherit these from Car. They will also have values that are set when they are initialized.
+ - callout(Challenge):
+ Racing games are hot on the app store so we better make one fast! You will have all kinds vehicles in your game that will share some features. Better create a `Car` class. A car should have properties for `speed`, `fuel`, and `color`. (Speed: String, fuel: Int, color: String)
  
- a. Race Car - Race cars are always fast
- b. Tow Truck - Tow trucks are always slow
- c. Delivery Truck - Delivery trucks are slow and brown. 
+     Next create a subclass for each of the vehicle types listed below. These vehicles will all have speed, fuel and color since they inherit these from `Car`. They will also have values that are set when they are initialized.
+     
+         a. `RaceCar` - Race cars are always fast
+         b. `TowTruck` - Tow trucks are always slow
+         c. `DeliveryTruck` - Delivery trucks are slow and brown.
+     
+     Use initializers to make sure that each of the subclasses get the proper initial values!
+     
+     Make sure to determine what kinds of values should be initialized in the `Car` superclass. Then, determine the different characteristics unique to each type of vehicle. Determine what kinds of instantiation could be applied to each variable. 
  
- Use initializers to make sure that each of the subclasses get the proper initial values.
-
- 
- For this exercise, determine what kinds of values should be initialized in car. Then, determine the different characteristics unique to each type of vehicle. Determine what kinds of instantiation could be applied to each variable. For example, an ambulance could have a siren variable that could be instantiated with a convenience initializer. Make sure to use at least 3 convenience, 2 required, and 2 failable instantiations.
+    Create a few more vehicles of your choosing! For example, an ambulance could have a `sirenOn` variable that could be instantiated to `false` with a convenience initializer. Make sure to use at least 3 convenience, 2 required, and 2 failable instantiations.
  */
+// Write your challenge code here:
 
 
 
@@ -234,9 +239,6 @@ oddCow
 /*: 
  ### Answer
  */
-
-
-
 /*
 class Car {
     var speed: String!
