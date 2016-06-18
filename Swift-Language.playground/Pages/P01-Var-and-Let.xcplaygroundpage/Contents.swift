@@ -70,15 +70,15 @@ let Upcomingappversion = 1.1
  Use the conscepts covered in this section to test your knowledge and expand
  your skills.
  
- Consider each of the following situations and ask yourself whether it is best to use a var (mutable variable) or let (constant variable).
+ - callout(Challenge): Consider each of the following situations and ask yourself whether it is best to use a `var` (_mutable_ variable) or `let` (_constant_ variable)...
  
- - 1) We want to store information about the number of cars parked in a parking lot daily.
- 
- - 2) We want to record the number of units in an apartment complex.
- 
- - 3) Record your highscore in a game.
- 
- - 4) Record the number of letters in an alaphabet.
+     1. Storing information about the number of cars parked in a parking lot daily.
+     
+     2. Storing the number of units in an apartment complex.
+     
+     3. Storing your highscore in a game.
+     
+     4. Storing the number of letters in an alaphabet.
  
 */
 
@@ -125,18 +125,17 @@ let Upcomingappversion = 1.1
  
  ## Answers for challenge
  
- - A: var 
-    Why? the number of cars in the lot will change throughout the day. Using let here would not allow new cars to park or allow people to retrieve cars already parked.
+ - A: `var` -- Why? the number of cars in the lot will change throughout the day. Using let here would not allow new cars to park or allow people to retrieve cars already parked.
  
- - A: let Why? In general the number of units in a building will not change. (unless it is an app that creates an apartment, like TinyTower!)
+ - A: `let` -- Why? In general the number of units in a building will not change. (Unless it is an app that creates an apartment, like TinyTower!)
  
- - A: var Why? Your high score might be different each time you play, hopefully it's improving over time!
+ - A: var -- Why? Your high score might be different each time you play, hopefully it's improving over time!
  
- - A: let Why? There are 26 letters in the alphabet this number will change.
+ - A: let -- Why? There are 26 letters in the alphabet this number will change.
  
  */
 
-// Your answers should look something like these. The names do not have to match, you should have used let and var in the same places:
+// Your answers should look something like these. The names do not have to match, you should have used `let` and `var` in the same places:
 
 /*
 var numberOfCars = 4
@@ -148,11 +147,11 @@ let numberOfLetters = 26
 /*:
  
  ## Bonus
- Notice all of the variables begin with a letter. You can not begin a variable name with a number or other character like: !@#$%^&*+=-. You can use Emojis.
+ Notice all of the variables begin with a letter. You can not begin a variable name with a number or other character like: `!@#$%^&*+=-`. That said, you _can_ use Emojis... but that does not mean you should!
  
  Notice variable names always begin with a lowercase letter. This is a convention rather than a requirement. By convention class names begin with an upppercase letter. 
  
- Notice each of the names is made up of more than one word. Example: numberOfUnits is made of number Of Units. Variable names can't contain spaces, using an uppercase letter at the word break helps make the words readable. This is called camel case.
+ Notice each of the names is made up of more than one word. Example: `numberOfUnits` is made of number Of Units. Variable names can't contain spaces so using an uppercase letter at the word break helps make the words readable. This is called camel case.
  
 */
 
