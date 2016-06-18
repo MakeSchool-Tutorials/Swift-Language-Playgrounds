@@ -69,33 +69,31 @@ var anotherDictionary: [String: Int] = [:]
  
  Think of this like the difference between asking for all of the mail from mailbox number 3 (array), or asking for all of the mail in the mail box named "joe smith" (dictionary).
  
- Note: remember when defining a dictionary you define a Type for both the key and the value.
+ - callout(Challenge): Imagine you have to create an app to organize all of your instructors. You want to be able to find an instructor if you type their name.
  
- Imagine you have to create an app to organize all of your instructors. You want to be able to find an instructor if you type their name.
+     1. Define a variable to hold instructors. Set it equal to a dictionary with String key, a String value.
+     
+     2. Add one of the instructors in your track to the dictionary. Use their first name as the key and last name as the value. Repeat this twice more so you have three instructors in the dictionary.
+     
+     3. Imagine your app can send a message to an instructor. You need to get their fullname from the dictionary first. Using their first name print the last name. 
+     
+     4. Since Swift can't be sure that a key exists in a dictionary values are retruned as optionals. Unwrap the optional from the previous example.
+     
+     5. Let's test that optional thing. Our app will crash if we ask for a value that has no corresponding key! Use print to get at a value with a nonexistent key. I dare you to unwrap that!
+     
+     6. Unwrap the optional from step 5. Hmmm... not so good huh? 
+     
+     7. Reconfigure the line above to check for nil before printing the value.
+     
+     8. That was all too easy but not that useful. I mean why would you have to provide the first name of an instructor. You've decided to refactor your app so that all of the instructors will be organized by track. Create a new dictionary of type String: [String].
+     
+     9. Add a track of instructors to the new dictionary. This value this time will be an array of Strings
+     
+     10. Now get the apps track from your dictionary. It should be an optional array of Strings. Test for nil before printing the value.
  
- - 1) Define a variable to hold instructors. Set it equal to a dictionary with String key, a String value.
- 
- - 2) Add one of the instructors in your track to the dictionary. Use their first name as the key and last name as the value. Repeat this twice more so you have three instructors in the dictionary.
- 
-- 3) Imagine your app can send a message to an instructor. You need to get their fullname from the dictionary first. Using their first name print the last name. 
- 
-- 4) Since Swift can't be sure that a key exists in a dictionary values are retruned as optionals. Unwrap the optional from the previous example.
- 
-- 5) Let's test that optional thing. Our app will crash if we ask for a value that has no corresponding key! Use print to get at a value with a nonexistent key. I dare you to unwrap that!
- 
-- 6) Unwrap the optional from step 5. Hmmm... not so good huh? 
- 
-- 7) Reconfigure the line above to check for nil before printing the value.
- 
-- 8) That was all too easy but not that useful. I mean why would you have to provide the first name of an instructor. You've decided to refactor your app so that all of the instructors will be organized by track. Create a new dictionary of type String: [String].
- 
-- 9) Add a track of instructors to the new dictionary. This value this time will be an array of Strings
- 
-- 10) Now get the apps track from your dictionary. It should be an optional array of Strings. Test for nil before printing the value.
+ - note: When defining a dictionary you define a Type for both the key and the value.
  
 */
-
-
 // Write your answers here: 
 
 
@@ -108,10 +106,10 @@ var anotherDictionary: [String: Int] = [:]
 
 
 /*: 
- Answers:
+ 
+ ### Answer
  
  */
-
 /*
 // 1)
 var instructors = [String: String]()
