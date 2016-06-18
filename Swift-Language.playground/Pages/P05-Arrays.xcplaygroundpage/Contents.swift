@@ -1,4 +1,5 @@
 /*:
+ ![Make School Banner](./swift_banner.png)
 # Arrays
 Time to dive into arrays! An array is an ordered list of items.
 ## Initialization

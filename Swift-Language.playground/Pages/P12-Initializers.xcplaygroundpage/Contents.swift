@@ -1,4 +1,5 @@
 /*:
+ ![Make School Banner](./swift_banner.png)
  # Initializers
  There are many ways to skin a cat, and in Swift, there can be many ways to initialize a class. In this tutorial, we will cover _designated_, _convenience_, _required_, and _failable_ initializers. When you're just starting out, you probably won't have a need to use many of these, but as your classes become larger and more complex, using a specialized initializer can help cut down the amount of code you have to write overall.
  */

@@ -1,4 +1,5 @@
 /*:
+ ![Make School Banner](./swift_banner.png)
  # Classes and Structures
  Classes (and structures) will be the building blocks of your app. They're one of the fundamental aspects of _object-oriented programming_, which is the paradigm you'll be using and is one of the most common programming paradigms in use today. One of the most defining aspects of classes and structures is that they have data associated with them, called _properties_ and ways to manipulate that data, called _methods_.
  */

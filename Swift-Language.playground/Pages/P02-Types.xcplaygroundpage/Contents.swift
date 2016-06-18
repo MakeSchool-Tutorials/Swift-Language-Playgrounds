@@ -1,4 +1,5 @@
 /*:
+ ![Make School Banner](./swift_banner.png)
 # Types
 Did you notice that in the last lesson on variables, we never actually declared the _type_ of any of our variables? That's because Swift has a language feature called _type inference_. That means that the compiler will try to automatically figure out the type of each variable on its own. However, it's often better to be explicit by declaring the type of a variable in the code. That way, both the compiler and other programmers reading the code can be sure of your intention. To excplicitly declare the type of a value (like a `String` or `Int`) in a variable, do the following:
  */

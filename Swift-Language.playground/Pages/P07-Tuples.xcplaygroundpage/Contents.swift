@@ -1,4 +1,5 @@
 /*:
+ ![Make School Banner](./swift_banner.png)
 # Tuples
  
 So far, we've come across ways of packing multiples of data into entities – things like arrays to pack an ordered list of elements of the same type, and dictionaries to maintain a set of key-value pairs. But what if you just wanted a quick solution to pack together 2 or 3 things, without the values being necessarily of the same type?

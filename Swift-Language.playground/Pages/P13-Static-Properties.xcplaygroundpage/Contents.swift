@@ -1,4 +1,5 @@
 /*:
+ ![Make School Banner](./swift_banner.png)
 # Static Properties
  
 Sometimes you will want one of your class's properties to have a shared value between all instances of that class.

@@ -1,4 +1,5 @@
 /*:
+ ![Make School Banner](./swift_banner.png)
 # Challenge!
 To cap things off, here's a challenge that will require you to use many of the concepts you've learned so far. You're going to be creating a simple card game, in which you (the player) draw a card against the computer. The highest card wins! What an exciting game!
 */

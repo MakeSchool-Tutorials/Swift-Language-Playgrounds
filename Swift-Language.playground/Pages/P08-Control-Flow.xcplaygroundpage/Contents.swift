@@ -1,4 +1,5 @@
 /*:
+ ![Make School Banner](./swift_banner.png)
  # Control Flow
  In this section, we'll cover how to use the following statments in Swift: `if`, `for`, `while`, and `switch`.
  

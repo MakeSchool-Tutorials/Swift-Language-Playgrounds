@@ -1,4 +1,5 @@
 /*:
+ ![Make School Banner](./swift_banner.png)
  # Protocols
  
  So far we've learned about classes, and how class inheritance can reduce repeated code by having one class inherit the properties and methods of another. But what if we want multiple classes to have similar functionality without them having to inherit every property and method?

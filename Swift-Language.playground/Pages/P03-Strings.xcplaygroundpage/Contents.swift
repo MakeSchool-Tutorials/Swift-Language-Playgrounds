@@ -1,4 +1,5 @@
 /*:
+ ![Make School Banner](./swift_banner.png)
 # Strings
 
 You're probably familiar with the idea of strings from other programming languages. Simply put, strings are sequences of characters. Most often, strings contain text that will be displayed to users of your app. In this playground, we will talk about how you can use strings in Swift.

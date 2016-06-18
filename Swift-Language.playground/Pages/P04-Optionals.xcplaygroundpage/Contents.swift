@@ -1,4 +1,5 @@
-/*: 
+/*:
+ ![Make School Banner](./swift_banner.png)
 # Optionals in Swift
 
 ## Introduction to Optionals

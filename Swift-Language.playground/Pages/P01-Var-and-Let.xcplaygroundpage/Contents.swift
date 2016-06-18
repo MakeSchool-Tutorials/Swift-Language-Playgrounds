@@ -1,4 +1,5 @@
 /*:
+ ![Make School Banner](./swift_banner.png)
  # Var and Let
  ## Variables
  Variables associate a name to a value. In Swift, variables are declared with the `var` keyword. */

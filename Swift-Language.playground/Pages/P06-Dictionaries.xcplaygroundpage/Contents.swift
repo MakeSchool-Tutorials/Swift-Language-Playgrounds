@@ -1,4 +1,5 @@
 /*:
+ ![Make School Banner](./swift_banner.png)
  # Dictionaries
  
  Dictionary is a collection type that can store multiple values, and each value has a unique key associated with it. (If you know Python, you may be familiar with Python dictionaries; in Java these are called HashMaps.) Unlike arrays, dictionaries are _unordered_, which means they do not keep the values in any particular order. Dictionaries are helpful in situations where you want to quickly look up a value based on its unique key.

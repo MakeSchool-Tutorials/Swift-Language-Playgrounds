@@ -1,6 +1,7 @@
 /*:
+ ![Make School Banner](./swift_banner.png)
  # Welcome to Swift!
- This is the first in a series of short tutorials designed to get you up to speed with Swift-specific topics. You have hopefully seen at least one programming language before, so these tutorials are going to focus on things that are new or special to Swift. We love Swift and hope you will too!
+ This is is a Swift Plaground of short tutorials designed to get you up to speed with Swift-specific topics. You have hopefully seen at least one programming language before, so these tutorials are going to focus on things that are new or special to Swift. We love Swift and hope you will too!
  */
 /*: 
  ## Table of Contents
@@ -19,4 +20,6 @@
  13. [Static Properites](P13-Static-Properties)
  14. [Protocols](P14-Protocols)
  15. [Challenge!](P15-Challenge)
+ 
+ [Get Started!](@next)
  */
