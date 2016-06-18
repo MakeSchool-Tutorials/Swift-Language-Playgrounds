@@ -191,23 +191,30 @@ someSize.height
 /*: 
  ### Challenge 
  
- - 1) Conceptual Question - Which of the following objects would be better modeled as a class or as a struct?
- a. A House
- b. A Bicycle
- c. A Company
- Can you come up with an everyday object that would be better modeled by one or the other?
+ Use the concepts covered in this section to test your knowledge and expand your skills.
  
- - 2) Create some two classes that model students and a school. A student should have a name, and a class year (Freshman, Sophmore, Juinior, Senior). A school should have name, year (2016), and an array to hold a list of students.
+ - callout(Challenge):
+    1. Conceptual Question - Which of the following objects would be better modeled as a class or as a struct?
  
- - 3) The school needs some instructors. All instructors should have a name and subject property. Each instructor should have a method called startClass. This method should print "[subject] class is now in session". 
+            a. A House
+            b. A Bicycle
+            c. A Company
  
- - 4) Some instructors are coaches. These instructors add a new property: sport property. This can be a string. Coach should have a method playSport(). This method should print "Lets play [sport]". Coach class should subclass Instructor!
- 
- - 5) You're making an app that keeps track of the weather. You need to wrap the weather data in a conveient package to pass around to various elements in your for display. Create a struct that has the following properties: temperature, wind speed, cloud percentage, weather description.
- 
- 
+    Can you come up with an everyday object that would be better modeled by one or the other?
+
+    2. Create two classes that model students and a school. A `Student` should have properties for `name` and  `classYear` (enum representing Freshman, Sophmore, Juinior, Senior). A `School` should have properties for `name`, `year` (2016), and `students` (an array to hold a list of students).
+
+    3. The school needs some instructors. All instructors should have a `name` and `subject` property. Each instructor should have a method called startClass. This method should print "[subject] class is now in session".
+
+    4. Some instructors are coaches. These instructors add a new property: `sport` property. This can be a string. Coach should have a method called `playSport()`. This method should print `"Lets play [sport]"`. `Coach` class should subclass `Instructor`!
+
+    5. You're making an app that keeps track of the weather. You need to wrap the weather data in a conveient package to pass around to various elements in your for display. Create a `struct` that has the following properties: `temperature`, `windSpeed`, `cloudPercentage`, `weatherDescription`.
  
  */
+
+
+
+
 
 
 
@@ -215,22 +222,23 @@ someSize.height
 /*: 
  ### Answer
  
- - 1) A Class, because different houses have different internal decorations
- - 2) A Struct, because bicycles are all built the same way
- - 3) A Class, because each company has different business models / products and subclasses can be made to emulate different individuals.
+ #### 1. Class or struct?
+ 
+         a. A Class, because different houses have different internal decorations
+         b. A Struct, because bicycles are all built the same way
+         c. A Class, because each company has different business models / products and subclasses can be made to emulate different individuals.
 
  */
-
 
 /*
 // 2
 enum ClassYear {
-    case FreshMan, Sophmore, Junior, Senior
+    case Freshman, Sophmore, Junior, Senior
 }
 
 class Student {
     var name = ""
-    var classYear = ClassYear.FreshMan
+    var classYear = ClassYear.Freshman
 }
 
 class School {
@@ -252,7 +260,7 @@ class Instructor {
 
 
 // 4
-class Coach {
+class Coach: Instructor {
     var sport = ""
     
     func playSport() {
@@ -266,7 +274,7 @@ struct Weather {
     var temperature = 72
     var windSpeed = 5
     var cloudPercentage = 15
-    var weatherDescription = "Partically Cloudy light wind"
+    var weatherDescription = "Partially Cloudy, light wind"
 }
 */
 
