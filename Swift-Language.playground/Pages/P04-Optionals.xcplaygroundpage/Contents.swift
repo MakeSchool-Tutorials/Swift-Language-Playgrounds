@@ -107,19 +107,25 @@ In this Playground we have looked at some of the capabilities of optionals in Sw
 
  ## Challenge
  
- Optionals are variables that some times have a value and sometimes do not. When This can occur more often than you would think. Anytime your app reaches out to internet, you can't be sure that you will get the results you are expecting, expact an optional. 
+ Optionals are variables that may have a value but sometimes do not. This can occur more often than you would think! Anytime your app reaches out to internet, you can't be sure that you will get the results you are expecting. This values will always be an optional.
  
- - 1) Imagine your app will display a username if availble. If no user is signed in you can display their name. This might be a good place for an optional. Define a variable named username, and make it type String? (optional)
+ Use the concepts covered in this section to test your knowledge and expand your skills.
  
-- 2) Print the value of username. You should get nil. 
+ - callout(Challenge): You are writing an app that deals with usernames retreived from the internet.
  
-- 3) Set the value of username to some name.
+     1. Imagine your app will display a username if availble. If no user is signed in you can display their name. This might be a good place for an optional. Define a variable named `username`, and make it type `String?` (optional)
+     
+     2. Print the value of `username`. You should get `nil`.
+     
+     3. Set the value of `username` to any name.
+     
+     4. Print `username` again. You should see something like: `Optional("Joe")`
+     
+     5. Now that `username` has a value you can safely unwrap it with the `!`. Print the force unwrapped username.
  
-- 4) Print username again. You should see something like: Optional("Joe")
- 
-- 5) Not that username has a value you can safely unwrap it with the !. Print username again, and unwrap.
- 
-- 6) Use the nil-coalescing operator to set the value of a variable to the value of username, or to "Anonymous" if username is nil.
+     6. Force unwrapping is a good habit! Print `username` with optional binding instead (`if let`).
+     
+     7. Use the nil-coalescing operator to set the value of a variable to the value of `username`, or to `"Anonymous"` if `username` is `nil`.
  
 */
 
@@ -141,19 +147,19 @@ In this Playground we have looked at some of the capabilities of optionals in Sw
  
  */
 // Your answer should look similar to this
+/*
 var username: String?   // 1
 print(username)         // 2
 username = "Joe"        // 3
 print(username)         // 4
 print(username!)        // 5
 
-let message = username ?? "Anonymous" // 6
+if let username = username { // 6
+    print(username)
+}
 
-
-
-
-
-
+let message = username ?? "Anonymous" // 7
+*/
 /*:
 [Previous](@previous) | [Table of Contents](P00-Table-of-Contents) | [Next](@next)
 */
