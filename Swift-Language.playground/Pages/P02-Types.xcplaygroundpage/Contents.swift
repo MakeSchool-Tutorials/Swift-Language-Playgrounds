@@ -90,14 +90,16 @@ let radians: Double = Double(angleInDegrees)  * pi / 180.0;
  
  ## Challenges!
  
- Imagine you are making a form in an app. There will be fields and other user interface elements that accept various types of data. Your app will accept the following information:
+ Use the concepts covered in this section to test your knowledge and expand your skills.
  
- - 1) Your app needs to accept a user name and hold it in a variable. What type is best for this variable?
- - 2) Your app needs to accept a password what type should this be?
- - 3) Your app needs to accept a variable that holds a user's shoe size what type?
- - 4) Your app has a UIPicker that allows a visitor to choose their gender choices are M, F, O(ther), N(to specified).
- - 5) Your app asks whether an applicant is older than 18? This is a check box or a switch, what type is best here?
- - 6) Your app asks how many people are in your party? (Imagine a reservation form)
+ - callout(Challenge): Imagine you are making a form in an app. There will be fields and other user interface elements that accept various types of data. Your app will accept the following information:
+ 
+     1. Your app needs to accept a username and hold it in a variable. What type is best for this variable?
+     2. Your app needs to accept a password what type should this be?
+     3. Your app needs to accept a variable that holds a user's shoe size what type?
+     4. Your app has a UIPicker that allows a visitor to choose their gender choices are M, F, O(ther), N(to specified).
+     5. Your app asks whether an applicant is older than 18? This is a check box or a switch, what type is best here?
+     6. Your app asks how many people are in your party? (Imagine a reservation form)
  
  */
 
@@ -123,19 +125,18 @@ let radians: Double = Double(angleInDegrees)  * pi / 180.0;
 /*: 
  ## Answers!
  
-  - 1) A user name needs to be a string of characters possibly containing any number of characters, A: String
-- 2) A password like a user name might contain any number of characters. A: String
- - 3) In the states shoesizes are expressed with half sizes, 10, 10.5, 11, 11.5 etc. In europe shoesizes are whole numbers: 42, 43, 44, 45 etc.
-    A: US Float
-    A: Europe Int
- - 4) If the value translates into a single character value you could use String but, you would be optimizing your code by choosing Character. 
+ 1. A username needs to be a string of characters possibly containing any number of characters, A: String
+ 2. A password like a user name might contain any number of characters. A: String
+ 3. In the US shoesizes are expressed with half sizes, 10, 10.5, 11, 11.5 etc. In Europe, shoesizes are whole numbers: 42, 43, 44, 45 etc.
+    A: US -- Float or Double, Europe -- Int
+ 4. If the value translates into a single character value you could use String but, you would be optimizing your code by choosing Character. 
     A: Character (best answer)
     A: String
  
- - 5) Any yes no question, or on, off situation is best handled with a Bool. 
+ 5. Any yes no question, or on, off situation is best handled with a Bool. 
     A: Bool
  
- - 6) The number of people in a party will always be a whole number: Int. You can't have 3.5 people in your party!
+ 6. The number of people in a party will always be a whole number: Int. You can't have 3.5 people in your party!
     A: Int
  
  */

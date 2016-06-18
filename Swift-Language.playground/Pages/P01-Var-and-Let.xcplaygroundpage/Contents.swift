@@ -67,8 +67,8 @@ let Upcomingappversion = 1.1
 
 /*: 
  ## Challenges!
- Use the conscepts covered in this section to test your knowledge and expand
- your skills.
+ 
+ Use the concepts covered in this section to test your knowledge and expand your skills.
  
  - callout(Challenge): Consider each of the following situations and ask yourself whether it is best to use a `var` (_mutable_ variable) or `let` (_constant_ variable)...
  
