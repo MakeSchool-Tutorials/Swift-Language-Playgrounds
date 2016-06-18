@@ -35,22 +35,23 @@ let yCoord = coordinate.y
  
  Tuples allow you to group data together. Ideally the information is related. These not lists but share some similar features. A Tuple is not a dictionary though it shares some features. Use a Tuple when an array or dictionary is more than you need. Remember, arrays and dictionaries come with a lots of features like: count, append, insert() etc. Tuples don't have extra features they just group a handful of values together. 
  
- Math is great, you like math, and math likes you! Why not use it when you program! When making games you'll often want to know the distance between two coordinates, or the angle. Locations in 2d space are always defined by x and y coordnites. Tuples might be a good way to group these together in a convenient package.
+ Math is great, you like math, and math likes you! Why not use it when you program! When making games you'll often want to know the distance between two coordinates, or the angle. Locations in two-dimensional space are always defined by x and y coordnites. Tuples might be a good way to group these together in a convenient package.
  
- Imagine you've made a game with a rock that will travel from one corner of the screen to the far corner.
+ - callout(Challenge): Imagine you've made a game with a rock that will travel from one corner of the screen to the far corner.
  
- - 1) Define a variable named startCoord. It should be a tuple with x = 0, and y = 0.
- - 2) Define another variable called endCoord. Set this to a tuple with x = 375, and y = 667. 
- - 3) How long is the trip? Remember Pythagoras? He's the guy that found that badass theorem that tells you the length of the diagonal side of a right triangle. When positioning things on the screen in an app it's all right triangles, thank you Pythagoras! If the sides at right angles are a and b, diagonal side is c. The forumal is sqrt(a * a + b * b) to get c. Use this to get the length from startCoord to endCoord. Print the answer.
+     1. Define a variable named `startCoord`. It should be a tuple with `x = 0` and `y = 0`.
+     2. Define another variable called `endCoord`. Set this to a tuple with `x = 375` and `y = 667`.
+     3. How long is the trip? Remember Pythagoras? He's the guy that found a badass theorem that tells you the length of the diagonal side of a right triangle. When positioning things on the screen in an app it's all right triangles, thank you Pythagoras! If the sides at right angles are a and b, diagonal side is c. The forumal is `sqrt(a * a + b * b)` to get c. Use this to get the length from `startCoord` to `endCoord`. Print the answer.
+     
+     4. Here's a new problem. Imagine you are creating an app that will allow people to send money from one phone to another. How do you keep track of the money? You can use a Double but what about the currency? If I live in the US and I type `1.00`. That's really one US Dollar. In Canada `1.00` is less. The day I wrote this `1.00 USD` is worth `1.29 CAD`. Imagine you'd like your app to be able to pass around dollar amounts along with the currency type! Create a variable that has a value of `1.00` and a currency type of `"usd"`.
+     
+     5. Now convert your USD into CAD. Create a new tuple with a currency type of `"cad"`, and a value that is the value of the first variable multiplied by `1.29`.
+     
+     6. Try that again. Create an new variable that will contain Australian dollars. Make a new tuple that will have a currency type of `"aud"`, and a value of the USD multiplied by `1.36`.
  
- - 4) Here's a new problem. Imagine you are creating an app that will allow people to send money from one phone to another. How do you keep track of the money? You can use a Double but what about the currency? If I live in the US and I type 1.00. That's really one US Dollar. In Canada 1.00 is less less. The day I wrote this 1.00 USD is worth 1.29 CAD. Imagien you'd like you app to be able to pass around dollar amounts along with the currency type! Create a variable that has a value of 1.00 and a currency type of "usd"
- 
- - 5) Now convert your us money into CAD. Create a new tuple with a type of "cad", and a value that is the value of the first variable multiplied by 1.29. 
- 
- - 6) Try that again. Create an new variable that will contain Australian dollars. Make a new variable that will have a type of "AUD", and a value of the us dollar multiplied by 1.36.
- 
- 
-- 7) Print a message that displays the value and the type for each of your variables. Something like: "[usValue] [usType] is [caValue] [caType]"
+     7. Print a message that displays the value and the type for each of your variables. Something like:
+         
+             "[usValue] [usType] is [caValue] [caType]"
  
  */
 
@@ -90,13 +91,13 @@ print(length)
 var money = (type: "usd", value: 1.0)
 
 // 5) 
-var cmoney = (type:"cad", value: money.value * 1.29)
+var cad_money = (type: "cad", value: money.value * 1.29)
 
 // 6) 
-var amoney = (type:"aud", value: money.value * 1.36)
+var aud_money = (type: "aud", value: money.value * 1.36)
 
 // 7) 
-print("\(money.value) \(money.type) is \(cmoney.value) \(cmoney.type)")
+print("\(money.value) \(money.type) is \(cad_money.value) \(cad_money.type)")
 
  */
 
