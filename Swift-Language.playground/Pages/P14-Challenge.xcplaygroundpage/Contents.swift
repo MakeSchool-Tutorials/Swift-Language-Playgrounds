@@ -42,6 +42,9 @@ So now, using the above `enum` code, create a Card `struct` with `suit` and `ran
 */
 /* Place your code here! */
 
+
+
+
 /*:
 ## Deck Class
  
@@ -50,6 +53,9 @@ Now that you've created your card class, it's time to create a `Deck` to hold th
 To start, your deck should have an empty initializer. Inside the initializer, create all 52 cards, and place them in the ordered data structure.
 */
 /* Place your code here! */
+
+
+
 
 /*:
 Now that you have a `Deck` it's time to add some functionality. Create a a function in your `Deck` class above called `drawOne()`. `drawOne()` should return a random card from the deck. Don't forget to remove that card from your internal deck data structure! 
@@ -96,6 +102,8 @@ Once you've implemented `drawOne()`, uncomment the following code to test it out
  You can make comparing the cards easier if you assign _raw values_ to the enumerations. Check out the [enumerations playground](P10-Enumerations) for a refresher on how to do that.
  */
 /* Place your code here! */
+
+
 
 
 /*:
