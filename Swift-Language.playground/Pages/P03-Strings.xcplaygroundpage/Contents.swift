@@ -144,7 +144,7 @@ In this playground, you've learned about some of the basic and intermediate oper
  
  ## Answer 
  
- Your answer may not look like something like what I have below.
+ Your answer should look like what I have below.
  
  */
 
