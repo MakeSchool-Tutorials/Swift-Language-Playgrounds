@@ -116,17 +116,18 @@ resize2(fromWidth: 20, fromHeight: 30, toWidth: 100, toHeight: 400)
 /*: 
  ### Challenge
  
- The best way to learn how to use functions is to write a few! 
+ The best way to learn how to use functions is to write a few!
  
- - 1) Imagine you are making app to help contractors caluclate area. This would help them estimate cost for materials and time. Your first function will calculate the area of a square. Your function should accept two Int values height and width, and return area as an Int. (Remember area is calculated as height multiplied by width)
+ - callout(Challenge):
  
- - 2) Now that you have area you might also need to know the perimiter. Contractors would use this to caluclate how much molding or framing material might be needed.
- 
- - 3) While this last function works for a rectangle. Imagine you have an irregular shaped floor plan. You could still calculate the perimiter by adding the length of each wall segment. Write a function that takes an array of Int and returns the total of all items in the array.
- 
- - 4) Lets try somehting new. Many of the ideas from the previous challenges would be best solved with a function! Remember the instructor list? here is a challenge make a function that accepts the name of an instructor and returns an optional array of instructors that match.
- */
+    1. Imagine you are making app to help contractors caluclate area. This would help them estimate cost for materials and time. Your first function will calculate the area of a square. Your function should accept two `Int` values: `height` and `width`, and return `area` as an `Int`. Remember, area is calculated as height multiplied by width.
 
+    2. Now that you have area you might also need to know the perimiter. Contractors would use this to caluclate how much molding or framing material might be needed. Remember, perimeter is calculated as the sum of all sides.
+
+    3. While this last function works for a rectangle. Imagine you have an irregular shaped floor plan. You could still calculate the perimiter by adding the length of each wall segment. Write a function that takes an array of `Int` and returns the total of all items in the array.
+
+    4. Let's try somehting new. Many of the ideas from the previous challenges would be best solved with a function! Remember the instructor list? here is a challenge make a function that accepts the prefix of an instructor name and returns an optional array of instructors that match.
+ */
 // Write your challenge code here:
 
 
@@ -140,8 +141,6 @@ resize2(fromWidth: 20, fromHeight: 30, toWidth: 100, toHeight: 400)
 /*: 
  ### Answers
  */
-
-
 /*
 // 1
 func getArea(height: Int, width: Int) -> Int {
@@ -173,10 +172,10 @@ getPerimiterFromLengths([2, 23, 8, 1, 11])
 
 // 4 
 var instructors = ["Daniel", "Martin", "Stephen", "Ann", "Adam", "Dion", "Mike"]
-func findInstructorBy(name: String) -> [String]? {
+func findInstructorBy(prefix: String) -> [String]? {
     var foundInstructors = [String]()
     for instructor in instructors {
-        if instructor.hasPrefix(name) {
+        if instructor.hasPrefix(prefix) {
             foundInstructors.append(instructor)
         }
     }
