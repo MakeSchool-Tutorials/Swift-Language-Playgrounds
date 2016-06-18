@@ -106,21 +106,23 @@ In this playground, you've learned about some of the basic and intermediate oper
  
  ## Challenges
  
- Imagine you are writing a new app that will write personal ads. You don't need to write a personal ad but you have a few friends that could use this. You will supply key words, and the app will write the ad.
+ Use the concepts covered in this section to test your knowledge and expand your skills.
  
- - 1) Define 4 variables that each contain a string. Set the value to any word that matches the variable name: 
- - * adjective
- - * location
- - * animal
- - * name
- - * music genre
- - * verb
+ - callout(Challenge): Imagine you are writing a new app that will write personal ads. You don't need to write a personal ad but you have a few friends that could use this. You will supply key words, and the app will write the ad.
  
- Each of these variables should a string.
- 
- - 2) Write a print statement containing the following string.
- 
- I adore [adjective] walks on the [location] with my pet [animal], named [name]. We enjoy singing [genre] music while we [verb] together.
+     1. Define 4 variables that each contain a string. Set the value to any word that matches the variable name:
+         - adjective
+         - location
+         - animal
+         - name
+         - music genre
+         - verb
+     
+     Each of these variables should a string.
+     
+     2. Write a print statement containing the following string.
+     
+             I adore [adjective] walks on the [location] with my pet [animal], named [name]. We enjoy singing [genre] music while we [verb] together.
  
  
  */
@@ -142,9 +144,7 @@ In this playground, you've learned about some of the basic and intermediate oper
  
  ## Answer 
  
- Your answer may not look like something like what I have below. 
- 
- 
+ Your answer may not look like something like what I have below.
  
  */
 
