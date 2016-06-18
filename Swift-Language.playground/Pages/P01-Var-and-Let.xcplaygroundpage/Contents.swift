@@ -125,13 +125,13 @@ let Upcomingappversion = 1.1
  
  ## Answers for challenge
  
- - A: `var` -- Why? the number of cars in the lot will change throughout the day. Using let here would not allow new cars to park or allow people to retrieve cars already parked.
+ 1. `var` -- Why? the number of cars in the lot will change throughout the day. Using let here would not allow new cars to park or allow people to retrieve cars already parked.
  
- - A: `let` -- Why? In general the number of units in a building will not change. (Unless it is an app that creates an apartment, like TinyTower!)
+ 2. `let` -- Why? In general the number of units in a building will not change. (Unless it is an app that creates an apartment, like TinyTower!)
  
- - A: var -- Why? Your high score might be different each time you play, hopefully it's improving over time!
+ 3. `var` -- Why? Your high score might be different each time you play, hopefully it's improving over time!
  
- - A: let -- Why? There are 26 letters in the alphabet this number will change.
+ 4. `let` -- Why? There are 26 letters in the alphabet this number will change.
  
  */
 
