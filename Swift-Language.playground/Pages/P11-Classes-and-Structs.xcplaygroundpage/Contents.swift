@@ -1,5 +1,11 @@
 /*:
  ![Make School Banner](./swift_banner.png)
+ # Stop right there!
+ 
+ If this is your first time going through these Playgrounds then you need to stop for a quick detour! Download the [Object-Oriented Programming review](https://github.com/MakeSchool-Tutorials/Intro-Object-Oriented-Programming-Playground/archive/master.zip) and go through all the pages there before continuing.
+ 
+ For those of you shaky on Object-Oriented Programming principles, this is an essential exercise to make sure you are ready for app and game development. You must go through it even if you are sure you understand the concepts -- don't worry, it won't take too long!
+ 
  # Classes and Structures
  Classes (and structures) will be the building blocks of your app. They're one of the fundamental aspects of _object-oriented programming_, which is the paradigm you'll be using and is one of the most common programming paradigms in use today. One of the most defining aspects of classes and structures is that they have data associated with them, called _properties_ and ways to manipulate that data, called _methods_.
  */
