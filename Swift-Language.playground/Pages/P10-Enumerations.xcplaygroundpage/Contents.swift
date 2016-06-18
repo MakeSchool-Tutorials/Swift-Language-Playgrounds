@@ -81,19 +81,18 @@ month.rawValue
  
  ### Challenge
  
- The core use of an enumeration is creating named references to values. While you could use: 0, 1, 2, 3 to represent North, East, South, and West. It's much easier to read and write code that uses names like: North, East, South, and West. 
+ The core use of an enumeration is creating named references to values. While you could use: `0, 1, 2, 3` to represent North, East, South, and West. It's much easier to read and write code that uses names like: `North, East, South, and West`.
  
-- 1) Imagine you want to create Tic Tac Toe. This is a game played on a three by three grid. Each grid space can be empty, or contain an X or O. An enum would be great for this. Write an enum to keep track of grid content for Tic Tac Toe.
- 
-- 2) You're making a game. You need to keep track of the direction your player can move. Make enum to keep track of directions Up, Right, Down, and Left.
- 
-- 3) Make an array that contains a completed game of Tic Tac Toe, where X have won. This means there needs to be three Xs in a row.
- 
-- 4) Imagine you are creating an app that will organize todo items. You want to color code them and would rather use an enum rather than the raw color value. Since writing .Orange, is easier and more descriptive than using something like #ff4411. Create an enum containg the colors: Red, Orange, Blue, and Green.
+ - callout(Challenge):
+    1. Imagine you want to create Tic Tac Toe. This is a game played on a three by three grid. Each grid space can be empty, or contain an `X` or `O`. An enum would be great for this. Write an enum to keep track of grid content for Tic Tac Toe.
+
+    2. You're making a game. You need to keep track of the direction your player can move. Make enum to keep track of directions `Up, Right, Down, and Left`.
+
+    3. Make a two-dimensional array that contains a completed game of Tic Tac Toe, where `X` has won. This means there needs to be three `X`s in a row.
+
+    4. Imagine you are creating an app that will organize todo items. You want to color code them and would rather use an enum rather than the raw color value. Writing `.Orange`, is easier and more descriptive than using something like `#ff4411`! Create an enum containg the colors: `Red, Orange, Blue, and Green`.
  
  */
-
-
 // Write your challenge code here:
 
 
@@ -105,10 +104,8 @@ month.rawValue
 /*: 
  ### Answer
  */
-
-
 /*
-// 1 
+// 1
 enum GridSquare {
     case Empty, X, O
 }
@@ -132,16 +129,11 @@ var ticTacToeBoard: [[GridSquare]] = [[.O, .X, .X],
  
  
 // 4 
- enum Colors {
+enum Colors {
     case Red, Orange, Blue, Green
- }
+}
 
 */
-
-
-
-
-
 /*:
 [Previous](@previous) | [Table of Contents](P00-Table-of-Contents) | [Next](@next)
 */
