@@ -111,5 +111,5 @@ Once you've implemented `drawOne()`, uncomment the following code to test it out
  Once you're done, have your instructor check your code!
  */
 /*:
-[Previous](@previous) | [Table of Contents](P00-Table-of-Contents)
+[Previous](@previous) | [Table of Contents](P00-Table-of-Contents) | [Advanced Topics](@next)
  */

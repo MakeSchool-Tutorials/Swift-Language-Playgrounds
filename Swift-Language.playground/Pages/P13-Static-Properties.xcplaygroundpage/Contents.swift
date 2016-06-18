@@ -59,6 +59,7 @@ jessica.numStudents
     4. You're reusing a lots od strings probably better to use an enum! Create two enums for speed and color. Call them CarSpeed, and CarColor. Change your class and factory methods to use these.
  
 */
+// Write your challenge code here:
 
 
 
