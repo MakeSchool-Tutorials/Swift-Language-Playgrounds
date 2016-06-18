@@ -18,8 +18,8 @@
  11. [Classes and Structs](P11-Classes-and-Structs)
  12. [Initializers](P12-Initializers)
  13. [Static Properites](P13-Static-Properties)
- 14. [Protocols](P14-Protocols)
- 15. [Challenge!](P15-Challenge)
+ 14. [Challenge!](P14-Challenge)
+ 15. [Protocols](P15-Protocols)
  
  [Get Started!](@next)
  */
