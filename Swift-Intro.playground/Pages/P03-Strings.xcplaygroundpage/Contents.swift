@@ -95,6 +95,73 @@ tigersAndMoreBears += "🐨🐨"
 
 In this playground, you've learned about some of the basic and intermediate operations you can perform on strings in Swift: creating literals, concatenating strings together and splitting them apart, string interpolation, and indexing into strings. There are many more things you can do with Strings, so explore the Swift standard library, and remember that you can also use methods from Cocoa's `NSString` as well. There are some great utilities for manipulating strings in there!
 */
+
+
+
+
+
+
+/*:
+ 
+ ## Challenges
+ 
+ Imagine you are writing a new app that will write personal ads. You don't need to write a personal ad but you have a few friends that could use this. You will supply key words, and the app will write the ad.
+ 
+ - 1) Define 4 variables that each contain a string. Set the value to any word that matches the variable name: 
+ - * adjective
+ - * location
+ - * animal
+ - * name
+ - * music genre
+ - * verb
+ 
+ Each of these variables should a string.
+ 
+ - 2) Write a print statement containing the following string.
+ 
+ I adore [adjective] walks on the [location] with my pet [animal], named [name]. We enjoy singing [genre] music while we [verb] together.
+ 
+ 
+ */
+
+// Type your code here: 
+
+
+
+
+
+
+
+// Should output something like: 
+// I adore long walks on the beach with my pet pug, named coco. We enjoy singing polka music while we dance together.
+
+
+
+/*: 
+ 
+ ## Answer 
+ 
+ Your answer may not look like something like what I have below. 
+ 
+ 
+ 
+ */
+
+
+/*
+let adjective = "long"
+let location = "beach"
+let animal = "pug"
+let name = "coco"
+let genre = "polka"
+let verb = "dance"
+
+print("I adore \(adjective) walks on the \(location) with my pet \(animal), named \(name). We enjoy singing \(genre) music while we \(verb) together.")
+*/
+
+
+
+
 /*:
 [Previous](@previous) | [Table of Contents](P00-Table-of-Contents) | [Next](@next)
 */
