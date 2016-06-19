@@ -38,7 +38,7 @@ Hopefully the answer you came up with is *enumerations*. Go ahead and use the fo
 Both enumerations come with an `allValues()` function, which returns an array containing each of the enumeration values. This function will be helpful later, when you create your `Deck` class.
 
  
-So now, using the above `enum` code, create a Card `struct` with `suit` and `rank` properties, and an initializer that accepts `suit` and `rank` parameters.
+So now, using the above `enum` code (you'll have to type it out below), create a Card `struct` with `suit` and `rank` properties, and an initializer that accepts `suit` and `rank` parameters.
 */
 /* Place your code here! */
 
