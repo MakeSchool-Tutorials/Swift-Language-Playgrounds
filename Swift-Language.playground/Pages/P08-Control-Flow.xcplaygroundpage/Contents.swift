@@ -78,7 +78,7 @@ default:
 /*:
  Two important things you should keep in mind when using `switch` in Swift:
  * You don't need to add a `break` statment after every condition. (Yay!)
- * The `default` case is like an `else` case that would run if non of the previous conditions are met. Every `switch` statment must have a `default` case.
+ * The `default` case is like an `else` case that would run if non of the previous conditions are met. Every `switch` statement must have a `default` case (this is not the case with enums, but we'll get there soon).
  */
 
 /*:
