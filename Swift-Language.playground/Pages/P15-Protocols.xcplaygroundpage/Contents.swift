@@ -50,7 +50,7 @@ array[1].post()
 /*: 
  ### Challenge
  
- The cool thing about protocols is that you only declare the signaute of methods used in a protcol. Protocols never contain body (code) of any methods they declare. So these challenges will be easier than they look. 
+ The cool thing about protocols is that you only declare the signature of methods used in a protcol. Protocols never contain body (code) of any methods they declare. So these challenges will be easier than they look. 
  
  - callout(Challenge):
      1. You're building a shooting game with spaceships, helicopters, and motorcycles. Create a protocol so that all of these items can be repaired and destroyed. Think of a good descriptive name for this protocol. Then add two methods one that says the object can be repaired, and another that says the object can be destroyed.
