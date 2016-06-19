@@ -13,7 +13,7 @@ let target = (2, 3)
  That's right. In this example, `target` has a type of `(Int, Int)`. We can do other things, too:
  */
 let anotherTarget: (Int, Int) = (1, 1)
-let applePrice: (String, Double) = ("Apple", 1.00);
+let applePrice: (String, Double) = ("Apple", 1.00)
 let coordinate: (x: Int, y: Int) = (2, 3)
 /*:
  That last one is an example of a _named tuple_. Normally, you retrieve elements of tuples by appending `.0`, `.1`, etc. to their variable, like this:
