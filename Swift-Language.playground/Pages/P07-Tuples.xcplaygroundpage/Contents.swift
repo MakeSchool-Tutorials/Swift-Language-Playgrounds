@@ -39,9 +39,9 @@ let yCoord = coordinate.y
  
  - callout(Challenge): Imagine you've made a game with a rock that will travel from one corner of the screen to the far corner.
  
-     1. Define a variable named `startCoord`. It should be a tuple with `x = 0` and `y = 0`.
+     1. Define a variable named `startCoord`. It should be a tuple with `x = 5.1` and `y = 8.3`.
      2. Define another variable called `endCoord`. Set this to a tuple with `x = 375` and `y = 667`.
-     3. How long is the trip? Remember Pythagoras? He's the guy that found a badass theorem that tells you the length of the diagonal side of a right triangle. When positioning things on the screen in an app it's all right triangles, thank you Pythagoras! If the sides at right angles are a and b, diagonal side is c. The forumal is `sqrt(a * a + b * b)` to get c. Use this to get the length from `startCoord` to `endCoord`. Print the answer.
+     3. How long is the trip? Remember Pythagoras? He's the guy that found a badass theorem that tells you the length of the diagonal side of a right triangle. This can be modified into a formula providing the distance between two points! Thank you Pythagoras! If your two points are a and b, the formula is `sqrt((b.x - a.x)*(b.x - a.x) + (b.y - a.y)*(b.x - a.y))`. Use this to get the length from `startCoord` to `endCoord`. Print the answer.
      
      4. Here's a new problem. Imagine you are creating an app that will allow people to send money from one phone to another. How do you keep track of the money? You can use a Double but what about the currency? If I live in the US and I type `1.00`. That's really one US Dollar. In Canada `1.00` is less. The day I wrote this `1.00 USD` is worth `1.29 CAD`. Imagine you'd like your app to be able to pass around dollar amounts along with the currency type! Create a variable that has a value of `1.00` and a currency type of `"usd"`.
      
@@ -75,26 +75,28 @@ let yCoord = coordinate.y
 
 /*
 // 1)
-var startCoord = (x: 0.0, y: 0.0) // Using a Double here means you don't have to convert the value below.
+let startCoord = (x: 5.1, y: 8.3) // Using a Double here means you don't have to convert the value below.
 
 // 2)
-var endCoord = (x: 375, y: 667) // These values are type Int
+let endCoord = (x: 375, y: 667) // These values are type Int
 
-// 3) something like this though your asnwer might look different
+// 3) something like this though your answer might look different
 import Foundation
 
-// endCoord did no use a Double value so we need to convert the values to Double.
-var length = sqrt(startCoord.x * startCoord.x + Double(endCoord.x) * Double(endCoord.y))
+// endCoord did not use a Double value so we need to convert the values to Double!
+let xDiff = Double(endCoord.x) - startCoord.x
+let yDiff = Double(endCoord.y) - startCoord.y
+let length = sqrt(xDiff * xDiff + yDiff * yDiff)
 print(length)
 
 // 4) 
-var money = (type: "usd", value: 1.0)
+let money = (type: "usd", value: 1.0)
 
 // 5) 
-var cad_money = (type: "cad", value: money.value * 1.29)
+let cad_money = (type: "cad", value: money.value * 1.29)
 
 // 6) 
-var aud_money = (type: "aud", value: money.value * 1.36)
+let aud_money = (type: "aud", value: money.value * 1.36)
 
 // 7) 
 print("\(money.value) \(money.type) is \(cad_money.value) \(cad_money.type)")
