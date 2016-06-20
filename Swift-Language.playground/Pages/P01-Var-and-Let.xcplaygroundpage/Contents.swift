@@ -85,7 +85,7 @@ let Upcomingappversion = 1.1
 
 // Write your variables to describe the questions above here. 
 
-// 1) Define a variable to hold the number of cars parked in a parking lot, there 4 cars parked at the mement.
+// 1) Define a variable to hold the number of cars parked in a parking lot, there 4 cars parked at the moment.
 
 
 
