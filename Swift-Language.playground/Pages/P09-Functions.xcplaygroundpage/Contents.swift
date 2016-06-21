@@ -126,7 +126,7 @@ resize2(fromWidth: 20, fromHeight: 30, toWidth: 100, toHeight: 400)
 
     3. While this last function works for a rectangle. Imagine you have an irregular shaped floor plan. You could still calculate the perimiter by adding the length of each wall segment. Write a function that takes an array of `Int` and returns the total of all items in the array.
 
-    4. Let's try somehting new. Many of the ideas from the previous challenges would be best solved with a function! Remember the instructor list? here is a challenge make a function that accepts the prefix of an instructor name and returns an optional array of instructors that match.
+    4. Let's try somehting new. Many of the ideas from the previous challenges would be best solved with a function! Remember the instructor list? here is a challenge make a function that accepts the prefix of an instructor name and returns an array of instructors that match.
  */
 // Write your challenge code here:
 
