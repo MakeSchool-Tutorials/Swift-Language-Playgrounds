@@ -190,7 +190,30 @@ someSize.height
  Notice how `someSize.height` wasn't changed when we changed `coolSize.height`. When it comes to structs, Swift creates a new copy of the instance and passes it as a new value to the variable instead of just referencing to it. This applies to passing `struct`s as parameters as well.
  */
 /*:
- For more details on what we covered here, please visit [Apple's classes and structures guide.](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/ClassesAndStructures.html)
+ 
+ ### When to use a struct instead of a class?
+ 
+ When you are working with the actual representation of any UI elements, you will always use a class. Why? Labels (`UILabel`), image views (`UIImageView`), table view cells (`UITableViewCell`), and sprites for games (`SKSpriteNode`) will all be classes since your custom versions will inherit from the one's provided by Apple. Only classes support inheritance!
+ 
+ The properties of these UI elements are often represented by structs! Things like color (`UIColor`), position (`CGPoint`), and size (`CGSize`) are all structs. Anything type from core graphics library (starts with `CG`) will be a struct and you'll use these types often to describe the properties of UI elements.
+ 
+ Beyond that, the choice is somewhat up to you. Since iOS development is pretty Object-Oriented Programming heavy, we will tend to use classes for a lot of "living data". We will use structs in place of tuples for any sets of very basic data that we need to represent often.
+ 
+ Apple's documentation (linked below) defines these guidelines for when you might want to use a struct:
+ 
+ - callout(Apple Documentation on structs):
+ 
+     As a general guideline, consider creating a structure when one or more of these conditions apply:
+     
+     - The structure’s primary purpose is to encapsulate a few relatively simple data values.
+     - It is reasonable to expect that the encapsulated values will be copied rather than referenced when you assign or pass around an instance of that structure.
+     - Any properties stored by the structure are themselves value types, which would also be expected to be copied rather than referenced.
+     - The structure does not need to inherit properties or behavior from another existing type.
+     
+     In all other cases, define a class, and create instances of that class to be managed and passed by reference. In practice, this means that most custom data constructs should be classes, not structures.
+ 
+ For more details on what we covered here, please visit [Apple's classes and structures guide](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/ClassesAndStructures.html).
+ 
  */
 
 
@@ -202,9 +225,10 @@ someSize.height
  - callout(Challenge):
     1. Conceptual Question - Which of the following objects would be better modeled as a class or as a struct?
  
-            a. A House
-            b. A Bicycle
-            c. A Company
+            a. Houses
+            b. Nutrition Information
+            c. Companies
+            d. Points in 3D space (x, y, z)
  
     Can you come up with an everyday object that would be better modeled by one or the other?
 
@@ -214,7 +238,7 @@ someSize.height
 
     4. Some instructors are coaches. These instructors add a new property: `sport` property. This can be a string. Coach should have a method called `playSport()`. This method should print `"Lets play [sport]"`. `Coach` class should subclass `Instructor`!
 
-    5. You're making an app that keeps track of the weather. You need to wrap the weather data in a conveient package to pass around to various elements in your for display. Create a `struct` that has the following properties: `temperature`, `windSpeed`, `cloudPercentage`, `weatherDescription`.
+    5. You're making an app that keeps track of the weather. You need to wrap the weather data in a conveient package to pass around to various elements in your for display. Create a `struct` that has the following properties: `temperature`, `windSpeed`, `cloudPercentage`, `weatherDescription`. `struct` works well here since this is just data we are passing around!
  
  */
 // Write your challenge code here:
@@ -231,9 +255,12 @@ someSize.height
  
  #### 1. Class or struct?
  
-         a. A Class, because different houses have different internal decorations
-         b. A Struct, because bicycles are all built the same way
-         c. A Class, because each company has different business models / products and subclasses can be made to emulate different individuals.
+     a. Depends... If this was a game and we were representing houses the player could enter, modify, and decorate then a class would be best -- in this situation the house represents a "living" object. If this were a realty app for viewing house listings than a struct would suffice. In a realty app we aren't modeling the house itself. We are just creating a container to store data related to it.
+     b. A Struct. Nutrition information for food (calorie count, saturated fats, etc) is "dead data". A banana's nutritional information never changes!
+     c. Depends... Like the house example it depends on if you are representing a company or information about the company. If you are representing a company that you will regularly be changing and want to have methods like "hireNewEmployee" then a class would be best. If you are only storing data about a company like it's name, number of employees, and it's current assets then you can use a struct.
+     d. A Struct. A point in 3D space is definitely "dead data". The character it represents the position of might be living, but points represent a snapshot of information.
+ 
+All in all, these are design choices!
 
  */
 
