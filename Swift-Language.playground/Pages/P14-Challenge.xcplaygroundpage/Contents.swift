@@ -20,10 +20,10 @@ To start we'll make a simple card class. In fact, instead of a class, it might b
 Hopefully the answer you came up with is *enumerations*. Go ahead and use the following code to create your enumerations:
  
     enum Rank {
-        case Ace, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King
+        case Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King, Ace
      
         static func allValues() -> [Rank] {
-            return [Ace, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King]
+            return [Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King, Ace]
         }
     }
      
