@@ -78,7 +78,7 @@ let Upcomingappversion = 1.1
      
      3. Storing your highscore in a game.
      
-     4. Storing the number of letters in an alaphabet.
+     4. Storing the number of letters in an alphabet.
  
 */
 
