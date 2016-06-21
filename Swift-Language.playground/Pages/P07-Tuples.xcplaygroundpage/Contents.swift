@@ -41,7 +41,7 @@ let yCoord = coordinate.y
  
      1. Define a variable named `startCoord`. It should be a tuple with `x = 5.1` and `y = 8.3`.
      2. Define another variable called `endCoord`. Set this to a tuple with `x = 375` and `y = 667`.
-     3. How long is the trip? Remember Pythagoras? He's the guy that found a badass theorem that tells you the length of the diagonal side of a right triangle. This can be modified into a formula providing the distance between two points! Thank you Pythagoras! If your two points are a and b, the formula is `sqrt((b.x - a.x)*(b.x - a.x) + (b.y - a.y)*(b.x - a.y))`. Use this to get the length from `startCoord` to `endCoord`. Print the answer.
+     3. How long is the trip? Remember Pythagoras? He's the guy that found a badass theorem that tells you the length of the diagonal side of a right triangle. This can be modified into a formula providing the distance between two points! Thank you Pythagoras! If your two points are a and b, the formula is `sqrt((b.x - a.x)*(b.x - a.x) + (b.y - a.y)*(b.y - a.y))`. Use this to get the length from `startCoord` to `endCoord`. Print the answer.
      
      4. Here's a new problem. Imagine you are creating an app that will allow people to send money from one phone to another. How do you keep track of the money? You can use a Double but what about the currency? If I live in the US and I type `1.00`. That's really one US Dollar. In Canada `1.00` is less. The day I wrote this `1.00 USD` is worth `1.29 CAD`. Imagine you'd like your app to be able to pass around dollar amounts along with the currency type! Create a variable that has a value of `1.00` and a currency type of `"usd"`.
      
