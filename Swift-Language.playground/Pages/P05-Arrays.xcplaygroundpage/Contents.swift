@@ -64,7 +64,7 @@ mutableGroceryList.append("yogurt")
  
  Notice how after adding "chips", "yogurt" is shifted to the next index.
  */
-mutableGroceryList.insert("chips", atIndex: 2)
+mutableGroceryList.insert("chips", at: 2)
 /*:
  To combine 2 mutable arrays together:
  */
@@ -81,7 +81,7 @@ var firstItem = mutableGroceryList[0]
 /*:
  Of course, you have the ability to remove an item. This will return the removed item.
  */
-let removedItem = mutableGroceryList.removeAtIndex(0)
+let removedItem = mutableGroceryList.remove(at: 0)
 
 
 
@@ -177,7 +177,7 @@ currentTask += 1
 print(array[currentTask])
 
  // 9
-array.insert("Feed the Chickens", atIndex: 2)
+array.insert("Feed the Chickens", at: 2)
 
  // 10
 currentTask += 1

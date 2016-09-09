@@ -51,7 +51,7 @@ func firstLast(array: [Int]) -> (first: Int, last: Int) {
  Let's see how a caller can use this function to receive 2 values back from the function. We're going to call the `firstLast` function and put the returned value (the tuple) in a variable called `result`.
  */
 var numbers = [10, 30, 13, 5, 9]
-let result = firstLast(numbers)
+let result = firstLast(array: numbers)
 /*:
  There are a few ways you can retrieve values from the tuple returned from the function:
  */
@@ -66,10 +66,9 @@ let val2 = result.0
 /*:
  There is also a totally different way to get back the values. You can define your own tuple items, and they will be bound to the values returned by the function. In the line below, item1 is bound to the value of the first item returned by the function. Note that they do not need to have their types defined. Why? because Swift is smart enough to realize that the function you are calling returns 2 integers, so it figures that you wanted item1 and item2 to be integers as well. Cool, huh?
  */
-let (item1, item2) = firstLast(numbers)
+let (item1, item2) = firstLast(array: numbers)
 print(item1)
 print(item2)
-/*: */
 /*:
  ## Parameter Names
  All right, time to talk about an advanced topic: internal and external parameter names. Coming from other programming languages, you may not have heard such a thing, but no worries, once you understand why it is needed, you will be using it everywhere in your code.
@@ -97,7 +96,7 @@ func resize(width1: Int, height1: Int, width2: Int, height2: Int) {
 /*:
  Notice how this function is being called. The caller sends in 4 numbers, but it is confusing which number matches which parameter. This is how bugs are made! Imagine accidentally switching two of these numbers, and everything falls apart.
  */
-resize(20, height1: 30, width2: 100, height2: 400)
+resize(width1: 20, height1: 30, width2: 100, height2: 400)
 /*:
  This is where external names come in handy. You can force the caller to use the external names when calling the function to make it easier for them to see which value matches which parameter. Look at this modified version:
  */
@@ -138,7 +137,7 @@ resize2(fromWidth: 20, fromHeight: 30, toWidth: 100, toHeight: 400)
 
 
 
-/*: 
+/*:
  ### Answers
  */
 /*
@@ -147,7 +146,7 @@ func getArea(height: Int, width: Int) -> Int {
     return height * width
 }
 
-getArea(8, width: 23)
+getArea(height: 8, width: 23)
 
 
 // 2
@@ -155,7 +154,7 @@ func getPerimieter(height: Int, width: Int) -> Int {
     return height * 2 + width * 2
 }
 
-getPerimieter(12, width: 12)
+getPerimieter(height: 12, width: 12)
 
 
 // 3 
@@ -168,10 +167,10 @@ func getPerimiterFromLengths(lengths: [Int]) -> Int {
     return totalLength
 }
 
-getPerimiterFromLengths([2, 23, 8, 1, 11])
+getPerimiterFromLengths(lengths: [2, 23, 8, 1, 11])
 
 // 4 
-var instructors = ["Daniel", "Martin", "Stephen", "Ann", "Adam", "Dion", "Mike"]
+var instructors = ["Buffy", "Xander", "Willow", "Rupert", "Anya", "Spike", "Tara", "Angel"]
 func findInstructorBy(prefix: String) -> [String]? {
     var foundInstructors = [String]()
     for instructor in instructors {
@@ -183,11 +182,11 @@ func findInstructorBy(prefix: String) -> [String]? {
     return foundInstructors
 }
 
-print(findInstructorBy("D"))
-print(findInstructorBy("A"))
-print(findInstructorBy("Dan"))
-
+print(findInstructorBy(prefix: "B"))
+print(findInstructorBy(prefix: "W"))
+print(findInstructorBy(prefix: "An"))
 */
+
 
 
 

@@ -5,21 +5,22 @@
  */
 /*: 
  ## Table of Contents
+ 
  1. [Var and Let](P01-Var-and-Let)
- 2. [Type Inference](P02-Types)
- 3. [Strings](P03-Strings)
- 4. [Optionals](P04-Optionals)
- 5. [Arrays](P05-Arrays)
- 6. [Dictionaries](P06-Dictionaries)
- 7. [Tuples](P07-Tuples)
- 8. [Control Flow](P08-Control-Flow)
- 9. [Functions](P09-Functions)
- 10. [Enumerations](P10-Enumerations)
- 11. [Classes and Structs](P11-Classes-and-Structs)
- 12. [Initializers](P12-Initializers)
- 13. [Static Properites](P13-Static-Properties)
- 14. [Challenge!](P14-Challenge)
- 15. [Protocols](P15-Protocols)
+ 1. [Type Inference](P02-Types)
+ 1. [Strings](P03-Strings)
+ 1. [Optionals](P04-Optionals)
+ 1. [Arrays](P05-Arrays)
+ 1. [Dictionaries](P06-Dictionaries)
+ 1. [Tuples](P07-Tuples)
+ 1. [Control Flow](P08-Control-Flow)
+ 1. [Functions](P09-Functions)
+ 1. [Enumerations](P10-Enumerations)
+ 1. [Classes and Structs](P11-Classes-and-Structs)
+ 1. [Initializers](P12-Initializers)
+ 1. [Static Properites](P13-Static-Properties)
+ 1. [Challenge!](P14-Challenge)
+ 1. [Protocols](P15-Protocols)
  
  [Get Started!](@next)
  */

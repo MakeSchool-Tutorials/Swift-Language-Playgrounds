@@ -232,7 +232,7 @@ someSize.height
  
     Can you come up with an everyday object that would be better modeled by one or the other?
 
-    2. Create two classes that model students and a school. A `Student` should have properties for `name` and  `classYear` (enum representing Freshman, Sophmore, Juinior, Senior). A `School` should have properties for `name`, `year` (2016), and `students` (an array to hold a list of students).
+    2. Create two classes that model students and a school. A `Student` should have properties for `name` and  `classYear` (enum representing freshman, sophomore, junior, senior). A `School` should have properties for `name`, `year` (2016), and `students` (an array to hold a list of students).
 
     3. The school needs some instructors. All instructors should have a `name` and `subject` property. Each instructor should have a method called startClass. This method should print "[subject] class is now in session".
 
@@ -267,12 +267,12 @@ All in all, these are design choices!
 /*
 // 2
 enum ClassYear {
-    case Freshman, Sophmore, Junior, Senior
+    case freshman, sophomore, junior, senior
 }
 
 class Student {
     var name = ""
-    var classYear = ClassYear.Freshman
+    var classYear = ClassYear.freshman
 }
 
 class School {

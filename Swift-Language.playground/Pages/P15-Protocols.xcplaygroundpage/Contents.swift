@@ -55,13 +55,13 @@ array[1].post()
  - callout(Challenge):
      1. You're building a shooting game with spaceships, helicopters, and motorcycles. Create a protocol so that all of these items can be repaired and destroyed. Think of a good descriptive name for this protocol. Then add two methods one that says the object can be repaired, and another that says the object can be destroyed.
      
-     2. The table view is one of the most common UI elements you will work with. It has a very extensive protocol. Imagine you work at Apple and had to write it! The table view needs to know how many cells it will display. Write a protocol called something like tableViewDelegate. Give it a method with a name something numberOfCells. This method should return an Int. 
+     2. Table view is one of the most common UI elements you will work with. It has a very extensive protocol. Imagine you work at Apple and had to write it! The table view needs to know how many cells it will display. Write a protocol called something like `TableViewDataSource`. Give it a method with a named `numberOfCells`. This method should return an Int.
      
-     3. The tableViews can be divided into sections. We need another method that returns the number of sections in a tableview. This method must also return an Int.
+     3. The table views can be divided into sections. We need another method that returns the number of sections in a table view. This method must also return an Int.
      
-     4. The Postable protocol above is great but you want to add some new methods. Imagine you are making an Twitter clone. You need a methad that takes a String  as a parameter.
+     4. The Postable protocol above is great but you want to add some new methods. Imagine you are making an Twitter clone. You need a method that takes a String  as a parameter. _Add this to the `Postable` protocol above._
      
-     5. Your Twitter app is working well. Now you want to search. Add a method to the protocol that takes a search string as a parameter and returns an array of strings.
+     5. Your Twitter app is working well. Now you want to search. Add a method to the protocol that takes a search string as a parameter and returns an array of strings. _Add this to the `Postable` protocol above._
  
  */
 // Write your challenge code here:
@@ -88,7 +88,8 @@ protocol TableViewDataSource {
 }
 
 
-protocol Postable {
+protocol Postable {                           // should be added above!
+    func post()                               // old method
     func postText(text: String)               // 4
     func search(search: String) -> [String]   // 5
 }

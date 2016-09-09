@@ -1,5 +1,5 @@
 /*:
- ![Make School Banner](./swift_banner.png)
+ ![Make School BRuperter](./swift_bRuperter.png)
  # Control Flow
  In this section, we'll cover how to use the following statments in Swift: `if`, `for`, `while`, and `switch`.
  
@@ -11,7 +11,7 @@ let isHuman = true
 if isHuman {
     print("I'm a human")
 } else {
-    print("Non human")
+    print("I'm a robot")
 }
 //: Note that there's no parentheses around the condition - they're optional in Swift.
 /*:
@@ -39,9 +39,9 @@ for i in 1..<5 {
     print(i)
 }
 /*:
- If you want access to both the index number and the element value of a certain array, there's a way to do that too! Simply enumerate over `cities.enumerate()`, which gives you a _tuple_ containing the index and element.
+ If you want access to both the index number and the element value of a certain array, there's a way to do that too! Simply enumerate over `cities.enumerated()`, which gives you a _tuple_ containing the index and element.
  */
-for (index, element) in cities.enumerate() {
+for (index, element) in cities.enumerated() {
     print("at \(index): \(element)");
 }
 /*:
@@ -76,31 +76,25 @@ default:
     print("Unknown grade")
 }
 /*:
+ - note:
  Two important things you should keep in mind when using `switch` in Swift:
- * You don't need to add a `break` statment after every condition. (Yay!)
- * The `default` case is like an `else` case that would run if non of the previous conditions are met. Every `switch` statement must have a `default` case (this is not the case with enums, but we'll get there soon).
- */
+     * You don't need to add a `break` statment after every condition. (Yay!)
+     * The `default` case is like an `else` case that would run if non of the previous conditions are met. Every `switch` statement must have a `default` case (this is not the case with enums, but we'll get there soon).
 
-/*:
- For more details on what we covered here, please visit [Apple's control flow guide.](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/ControlFlow.html#//apple_ref/doc/uid/TP40014097-CH9-ID120)
- */
+     For more details on what we covered here, please visit [Apple's control flow guide.](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/ControlFlow.html#//apple_ref/doc/uid/TP40014097-CH9-ID120)
 
-
-/*: 
  ### Challenge
  
  Flow control is a major part of app development. The apps you write will need to make decisions all the time. The if else, and switch statement are two of the most important tools for flow control. 
  
 - callout(Challenge):
-    1. Imagine you are working on app that will help you keep track of Make School instructors. Create an array that holds some of the instructors:
+    1. Imagine you are working on app that will help you keep track of Make School instructors. Create an array that holds some of the instructors. Print all of the instructor names to the console.
 
-    `Daniel, Martin, Stephen, Ann, Adam, Dion, Mike`
-
-    Feel free to add otheres! Print all of the instructor names to the console.
+            Buffy, Xander, Willow, Rupert, Anya, Spike, Tara
 
     2. Imagine that you can type the first letter of an instructor's name and get a list of all of the instructors whose name begins with the letter. Simulate this by creating a new array to hold the instructors whose name begins with the letter "D". Then create a for-in loop that will loop once for each instructor in the instructors array. Use an if-statement to look for names that beign with the letter "D" (Hint: you can use `hasPrefix()`, something like: `name.hasPrefix("D")`). Add each instructor you found to a new array and print that array after the loop to check your answer.
  
-    3. Imagine you want to search for a one instructor by name. Create a loop that will stop after it finds `"Frango"`. Hint: you can use `break` to stop a loop early! Print a message stating that you have found `"Frango"`.
+    3. Imagine you want to search for a one instructor by name. Create a loop that will stop after it finds `"Dawn"`. Hint: you can use `break` to stop a loop early! Print a message stating that you have found `"Dawn"`.
 
     4. Oops you just searched for an instructor not in the list? Your program needs to handle this how can you print a message saying `"[name] not found"`.
 
@@ -127,7 +121,7 @@ default:
 
 /*
 // 1
-var instructors = ["Daniel", "Martin", "Stephen", "Ann", "Adam", "Dion", "Mike"]
+var instructors = ["Buffy", "Xander", "Willow", "Rupert", "Anya", "Spike", "Tara"]
 for instructor in instructors {
     print(instructor)
 }
@@ -145,8 +139,8 @@ print(foundInstructors)
 
 // 3
 for instructor in instructors {
-    if instructor == "Dion" {
-        print("Found Dion")
+    if instructor == "Spike" {
+        print("Found Spike")
         break
     }
 }
@@ -154,7 +148,7 @@ for instructor in instructors {
 // 4
 var searchStr: String?
 for instructor in instructors {
-    if instructor == "Frango" {
+    if instructor == "Dawn" {
         searchStr = instructor
         break
     }
@@ -163,7 +157,7 @@ for instructor in instructors {
 if let searchStr = searchStr {
     print(searchStr)
 } else {
-    print("Frango not found")
+    print("Dawn not found")
 }
 
 

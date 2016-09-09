@@ -16,13 +16,13 @@ You can glue (_concatenate_) strings together with the `+` operator:
 */
 let season = "summer"
 let salutation = "Have a nice " + season + "!"
-//: Also, if you want to join an array of strings together, you can use the `joinWithSeparator` method of `String` to conjoin them with a delimiter of your choosing:
-let beetles = ["John", "Paul", "Ringo", "George"].joinWithSeparator(" and ")
-//: You can go in the opposite direction, too, with a method borrowed from NSString:
+//: Also, if you want to join an array of strings together, you can use the `joined` method of `String` to conjoin them with a delimiter of your choosing:
+let beetles = ["John", "Paul", "Ringo", "George"].joined(separator: " and ")
+//: You can go in the opposite direction, too, with a method borrowed from `NSString`:
 import Foundation
-let brokenUpBeetles = beetles.componentsSeparatedByString(" and ")
+let brokenUpBeetles = beetles.components(separatedBy: " and ")
 /*:
-- note: NSString is the name of Objective-C's string class. Notice that to use an NSString method, we had to `import Foundation`. Foundation is a framework that contains the fundamental classes and data structures from Objective-C. Most of Apple's code is written in Objective-C, so you will be interacting with Objective-C code often, even though the code you write is in Swift. Thankfully, Apple made it so that Swift interoperates with Objective-C seamlessly. Any time you work with any classes that are prefixed with NS, you're working with Objective-C classes, and you will have to `import Foundation`. You can read more about Foundation [here](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/ObjC_classic/index.html#//apple_ref/doc/uid/20001091).
+- note: `NSString` is the name of Objective-C's string class. Notice that to use an `NSString` method, we had to `import Foundation`. Foundation is a framework that contains the fundamental classes and data structures from Objective-C. Most of Apple's code is written in Objective-C, so you will be interacting with Objective-C code often, even though the code you write is in Swift. Thankfully, Apple made it so that Swift interoperates with Objective-C seamlessly. Any time you work with any classes that are prefixed with `NS`, you're working with Objective-C classes, and you will have to `import Foundation`. You can read more about Foundation [here](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/ObjC_classic/index.html#//apple_ref/doc/uid/20001091).
 */
 /*: 
 ## Mutating Strings
@@ -63,9 +63,9 @@ let position = 2
 /*:
 This is because characters in Swift strings actually represent conceptual units called **extended grapheme clusters** that don't match one-to-one with the bytes used to encode the string. You don't need to worry about what a grapheme cluster is; what matters is that you can't use a plain old integer index.
 
-Instead, you need to use the `advancedBy` method, which uses special knowledge about how strings store characters to calculate a suitable index:
+Instead, you need to use the `index` method, which uses special knowledge about how strings store characters to calculate a suitable index:
 */
-let index = barnResidents.startIndex.advancedBy(position)
+let index = barnResidents.index(barnResidents.startIndex, offsetBy: position)
 let realPig = barnResidents[index]
 /*: */
 /*:

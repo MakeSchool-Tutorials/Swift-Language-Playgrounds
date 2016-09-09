@@ -102,11 +102,11 @@ let cool = CoolHuman(talent: "just cool", otherTalent: "more talent", pounds: 0)
  Often times, particularly if your class has many properties, the users of your class won't want to provide values for every single one of the class's properties when they create a new instance. Often, they'll want to provide values for just a few properties, and are okay with the rest of the properties having default values. You can provide this functionality by creating convenience initializers.
  */
 enum MilkFat {
-    case Skim, OnePercent, TwoPercent, Whole
+    case skim, onePercent, twoPercent, whole
 }
 
 enum MilkFlavor {
-    case None, Chocolate, Strawberry
+    case regular, chocolate, strawberry
 }
 
 class Milk {
@@ -121,17 +121,17 @@ class Milk {
     
     // convenience initializer
     convenience init(flavor: MilkFlavor) {
-        self.init(flavor: flavor, fat: .TwoPercent)
+        self.init(flavor: flavor, fat: .twoPercent)
     }
     
     // convenience initializer
     convenience init(fat: MilkFat) {
-        self.init(flavor: .None, fat: fat)
+        self.init(flavor: .regular, fat: fat)
     }
     
     // convenience initializer
     convenience init() {
-        self.init(flavor: .None)
+        self.init(flavor: .regular)
     }
 }
 /*:
@@ -141,7 +141,7 @@ let defaultMilk = Milk()
 defaultMilk.flavor
 defaultMilk.fat
 /*:
- Notice that the default values of `None` and `TwoPercent` were chosen. Also notice that during the initialization sequence, two convenience initializers and the designated initializer were called. The sequence went:
+ Notice that the default values of `regular` and `twoPercent` were chosen. Also notice that during the initialization sequence, two convenience initializers and the designated initializer were called. The sequence went:
     
     convenience init() -> convenience init(flavor) -> designated init(flavor, milkfat)
  

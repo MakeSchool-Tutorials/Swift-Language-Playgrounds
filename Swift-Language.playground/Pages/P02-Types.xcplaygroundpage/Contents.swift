@@ -125,19 +125,19 @@ let radians: Double = Double(angleInDegrees)  * pi / 180.0;
 /*: 
  ## Answers!
  
- 1. A username needs to be a string of characters possibly containing any number of characters, A: String
- 2. A password like a user name might contain any number of characters. A: String
- 3. In the US shoesizes are expressed with half sizes, 10, 10.5, 11, 11.5 etc. In Europe, shoesizes are whole numbers: 42, 43, 44, 45 etc.
-    A: US -- Float or Double, Europe -- Int
- 4. If the value translates into a single character value you could use String but, you would be optimizing your code by choosing Character. 
-    A: Character (best answer)
-    A: String
+ 1. A username needs to be a string of characters possibly containing any number of characters, A: `String`
+ 2. A password like a user name might contain any number of characters. A: `String`
+ 3. In the US shoesizes are expressed with half sizes, `10, 10.5, 11, 11.5`, etc. In Europe, shoesizes are whole numbers: `42, 43, 44, 45`, etc.
+    A: US -- `Float` or `Double`, Europe -- `Int`
+ 4. If the value translates into a single character value you could use `String` but, you would be optimizing your code by choosing `Character`.
+    A: `Character` (best answer)
+    A: `String`
  
- 5. Any yes no question, or on, off situation is best handled with a Bool. 
-    A: Bool
+ 5. Any yes no question, or on, off situation is best handled with a `Bool`.
+    A: `Bool`
  
- 6. The number of people in a party will always be a whole number: Int. You can't have 3.5 people in your party!
-    A: Int
+ 6. The number of people in a party will always be a whole number: `Int`. You can't have `3.5` people in your party!
+    A: `Int`
  
  */
 

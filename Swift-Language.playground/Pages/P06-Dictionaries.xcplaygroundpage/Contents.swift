@@ -71,11 +71,11 @@ var anotherDictionary: [String: Int] = [:]
  
  - callout(Challenge): Imagine you have to create an app to organize all of your instructors. You want to be able to find an instructor if you type their name.
  
-     1. Define a variable to hold instructors. Set it equal to a dictionary with String key, a String value.
+     1. Define a variable to hold instructors. Set it equal to a `Dictionary` with `String` key, a `String` value.
      
      2. Add one of the instructors in your track to the dictionary. Use their first name as the key and last name as the value. Repeat this twice more so you have three instructors in the dictionary.
      
-     3. Imagine your app can send a message to an instructor. You need to get their fullname from the dictionary first. Using their first name print the last name. 
+     3. Imagine your app can send a message to an instructor. You need to get their full name from the dictionary first. Using their first name print the last name.
      
      4. Since Swift can't be sure that a key exists in a dictionary values are retruned as optionals. Unwrap the optional from the previous example.
      
@@ -89,7 +89,8 @@ var anotherDictionary: [String: Int] = [:]
      
      9. Add a track of instructors to the new dictionary. This value this time will be an array of Strings
      
-     10. Now get the apps track from your dictionary. It should be an optional array of Strings. Test for nil before printing the value.
+     10. Now get the apps track from your dictionary. It should be an optional array of Strings. Test for `nil` before printing the value.
+ 
  
  - note: When defining a dictionary you define a Type for both the key and the value.
  
@@ -110,22 +111,22 @@ var anotherDictionary: [String: Int] = [:]
  ### Answer
  
  */
-/*
+
 // 1)
 var instructors = [String: String]()
 // var instructors2: [String: String] = [:] // Alternative
 
 // 2)
-instructors["Grey"] = "Chen"
+instructors["Malcolm"] = "Reynolds"
 
 // 3)
-instructors["Jesse"] = "Tipton"
+instructors["Zoe"] = "Washburne"
 
 // 4)
-instructors["Veronica"] = "Lin"
+instructors["Derrial"] = "Book"
 
 // 5)
-print(instructors["Jesse"]!)
+print(instructors["Malcolm"]!)
 
 // 6)
 // print(instructors["Bowie"]!)
@@ -139,17 +140,17 @@ if instructors["Bowie"] != nil {
 var tracks = [String: [String]]()
 
 // 9)
-tracks["apps"] = ["Grey Chen", "Jesse Tipton", "Davi Chaves", "Veronica Lin"]
+tracks["apps"] = ["Malcolm Reynolds", "Zoe Washburne", "Derrial Book"]
 
 // 10)
-tracks["games"] = ["Steve Brennan", "Ann Michelsen", "Mitchell Hudson"]
+tracks["games"] = ["Kaylee Frye", "Jayne Cobb", "River Tam"]
 
 // 11)
 if let apps = tracks["apps"] {
     print(apps)
 }
 
-*/
+
 
 
 

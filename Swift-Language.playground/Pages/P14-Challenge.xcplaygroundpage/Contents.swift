@@ -15,23 +15,22 @@ To start we'll make a simple card class. In fact, instead of a class, it might b
  Our card class will have two properties: `rank` and `suit`. There are 13 ranks: Ace, King, Queen, Jack and Ten through Two. And, of course, the 4 suits are Spades, Clubs, Diamonds and Hearts.
  
  There's a couple of ways we could represent this information. For example, we could use an `Int` to represent the rank, Two would be `2`, Ten would be `10`, Jack would be `11`, etc. Or maybe we could use strings, like: `"Ace"`, `"Queen"`, `"Diamonds"`. But we shouldn't do either of those things - there's a better way! Can you think of what it is?
- */
-/*:
+
 Hopefully the answer you came up with is *enumerations*. Go ahead and use the following code to create your enumerations:
  
     enum Rank {
-        case Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King, Ace
-     
+        case two, three, four, five, six, seven, eight, nine, ten, jack, queen, king, ace
+        
         static func allValues() -> [Rank] {
-            return [Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King, Ace]
+            return [two, three, four, five, six, seven, eight, nine, ten, jack, queen, king, ace]
         }
     }
-     
+
     enum Suit {
-        case Spades, Hearts, Diamonds, Clubs
-     
+        case spades, hearts, diamonds, clubs
+        
         static func allValues() -> [Suit] {
-            return [Spades, Hearts, Diamonds, Clubs]
+            return [spades, hearts, diamonds, clubs]
         }
     }
  

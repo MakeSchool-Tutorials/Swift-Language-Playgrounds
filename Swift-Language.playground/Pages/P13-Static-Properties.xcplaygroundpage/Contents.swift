@@ -56,7 +56,7 @@ jessica.numStudents
 
     3. Add a static method that creates and returns a ups truck. These are slow and brown.
 
-    4. You're reusing a lots od strings probably better to use an enum! Create two enums for speed and color. Call them CarSpeed, and CarColor. Change your class and factory methods to use these.
+    4. You're reusing a lots of strings probably better to use an enum! Create two enums for speed and color. Call them CarSpeed, and CarColor. Change your class and factory methods to use these.
  
 */
 // Write your challenge code here:
@@ -69,14 +69,14 @@ jessica.numStudents
 /*: 
  ### Answer
  */
-/*
+
 // Note the changes we made to make use of these enums!
 enum CarColor {
-    case Red, Yellow, Brown
+    case red, yellow, brown
 }
 
 enum CarSpeed {
-    case Fast, Slow, Medium
+    case fast, slow, medium
 }
 
 
@@ -93,21 +93,21 @@ class Car {
     
     // 2
     static func ferrari() -> Car {
-        return Car(speed: .Fast, color: .Red)
+        return Car(speed: .fast, color: .red)
     }
     
     // 3
     static func aaaTowTruck() -> Car {
-        return Car(speed: .Slow, color: .Yellow)
+        return Car(speed: .slow, color: .yellow)
     }
     
     // 4
     static func upsTruck() -> Car {
-        return Car(speed: .Slow, color: .Brown)
+        return Car(speed: .slow, color: .brown)
     }
     
 }
-*/
+
 /*:
 [Previous](@previous) | [Table of Contents](P00-Table-of-Contents) | [Next](@next)
 */
