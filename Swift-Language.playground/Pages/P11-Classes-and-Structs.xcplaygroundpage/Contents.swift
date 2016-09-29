@@ -2,7 +2,7 @@
  ![Make School Banner](./swift_banner.png)
  # Stop right there!
  
- If this is your first time going through these Playgrounds then you need to stop for a quick detour! Download the [Object-Oriented Programming review](https://github.com/MakeSchool-Tutorials/Intro-Object-Oriented-Programming-Playground/archive/master.zip) and go through all the pages there before continuing.
+ If this is your first time going through these Playgrounds then you need to stop for a quick detour! Download the [Object-Oriented Programming review](https://github.com/MakeSchool-Tutorials/Intro-Object-Oriented-Programming-Playground/archive/swift3.zip) and go through all the pages there before continuing.
  
  For those of you shaky on Object-Oriented Programming principles, this is an essential exercise to make sure you are ready for app and game development. You should go through it even if you are sure you understand the concepts -- don't worry, it won't take too long and it's a great chance to practice more Swift!
  
