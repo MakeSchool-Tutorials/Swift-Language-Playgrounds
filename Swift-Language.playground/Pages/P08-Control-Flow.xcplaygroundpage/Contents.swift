@@ -1,10 +1,10 @@
 /*:
  ![Make School BRuperter](./swift_bRuperter.png)
  # Control Flow
- In this section, we'll cover how to use the following statments in Swift: `if`, `for`, `while`, and `switch`.
+ In this section, we'll cover how to use the following statements in Swift: `if`, `for`, `while`, and `switch`.
  
- ## `if` statments
- A simple `if` statment in Swift looks like the following:
+ ## `if` statements
+ A simple `if` statement in Swift looks like the following:
  */
 let isHuman = true
 
@@ -78,8 +78,8 @@ default:
 /*:
  - note:
  Two important things you should keep in mind when using `switch` in Swift:
-     * You don't need to add a `break` statment after every condition. (Yay!)
-     * The `default` case is like an `else` case that would run if non of the previous conditions are met. Every `switch` statement must have a `default` case (this is not the case with enums, but we'll get there soon).
+     * You don't need to add a `break` statement after every condition. (Yay!)
+     * The `default` case is like an `else` case that would run if none of the previous conditions are met. Every `switch` statement must have a `default` case (this is not the case with enums, but we'll get there soon).
 
      For more details on what we covered here, please visit [Apple's control flow guide.](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/ControlFlow.html#//apple_ref/doc/uid/TP40014097-CH9-ID120)
 
@@ -88,17 +88,17 @@ default:
  Flow control is a major part of app development. The apps you write will need to make decisions all the time. The if else, and switch statement are two of the most important tools for flow control. 
  
 - callout(Challenge):
-    1. Imagine you are working on app that will help you keep track of Make School instructors. Create an array that holds some of the instructors. Print all of the instructor names to the console.
+    1. Imagine you are working on an app that will help you keep track of Make School instructors. Create an array that holds some of the instructors. Print all of the instructor names to the console.
 
             Buffy, Xander, Willow, Rupert, Anya, Spike, Tara
 
     2. Imagine that you can type the first letter of an instructor's name and get a list of all of the instructors whose name begins with the letter. Simulate this by creating a new array to hold the instructors whose name begins with the letter "D". Then create a for-in loop that will loop once for each instructor in the instructors array. Use an if-statement to look for names that beign with the letter "D" (Hint: you can use `hasPrefix()`, something like: `name.hasPrefix("D")`). Add each instructor you found to a new array and print that array after the loop to check your answer.
  
-    3. Imagine you want to search for a one instructor by name. Create a loop that will stop after it finds `"Dawn"`. Hint: you can use `break` to stop a loop early! Print a message stating that you have found `"Dawn"`.
+    3. Imagine you want to search for one instructor by name. Create a loop that will stop after it finds `"Dawn"`. Hint: you can use `break` to stop a loop early! Print a message stating that you have found `"Dawn"`.
 
     4. Oops you just searched for an instructor not in the list? Your program needs to handle this how can you print a message saying `"[name] not found"`.
 
-    5. Image you are making a game. There is an object that moves from one side of the screen to the other and then back. Game objects represent their horizontal position as an x value. The screen is `375` points wide. When `x` is less than `0` or when the `x` is greater than `375`, velocity needs to be inverted. For example if volicity was `10` and the `x` position of the object was `380` velocity would become `-10`. Recreate the example in code. Print velocity to show that it has changed to `-10`.
+    5. Imagine you are making a game. There is an object that moves from one side of the screen to the other and then back. Game objects represent their horizontal position as an x value. The screen is `375` points wide. When `x` is less than `0` or when the `x` is greater than `375`, velocity needs to be inverted. For example if velocity was `10` and the `x` position of the object was `380` velocity would become `-10`. Recreate the example in code. Print velocity to show that it has changed to `-10`.
  
 */
 // Write your challenge code here:
