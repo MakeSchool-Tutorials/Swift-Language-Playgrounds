@@ -111,7 +111,7 @@ var anotherDictionary: [String: Int] = [:]
  ### Answer
  
  */
-
+/*
 // 1)
 var instructors = [String: String]()
 // var instructors2: [String: String] = [:] // Alternative
@@ -150,7 +150,7 @@ if let apps = tracks["apps"] {
     print(apps)
 }
 
-
+*/
 
 
 
