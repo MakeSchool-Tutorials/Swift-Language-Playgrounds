@@ -44,7 +44,7 @@ let nextSeason = "fall"
 let farewell = "See you in the \(nextSeason)"
 //: But it doesn't stop there. In addition to variable names, you can include arbitrary expressions inside the interpolation segment:
 let radius: Double = 3
-let complexInterpolation = "The area of my circle is \(M_PI * radius * radius)"
+let complexInterpolation = "The area of my circle is \(Double.pi * radius * radius)"
 /*: */
 /*:
 ## Using `print` for Debugging
