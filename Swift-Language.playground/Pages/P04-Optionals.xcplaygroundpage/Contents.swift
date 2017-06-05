@@ -107,7 +107,7 @@ In this Playground we have looked at some of the capabilities of optionals in Sw
 
  ## Challenge
  
- Optionals are variables that may have a value but sometimes do not. This can occur more often than you would think! Anytime your app reaches out to internet, you can't be sure that you will get the results you are expecting. This values will always be an optional.
+ Optionals are variables that may have a value but sometimes do not. This can occur more often than you would think! Anytime your app reaches out to the internet, you cannot be sure that you will get the results you are expecting. These values will always be optionals.
  
  Use the concepts covered in this section to test your knowledge and expand your skills.
  
@@ -123,7 +123,7 @@ In this Playground we have looked at some of the capabilities of optionals in Sw
      
      5. Now that `username` has a value you can safely unwrap it with the `!`. Print the force unwrapped username.
  
-     6. Force unwrapping is a good habit! Print `username` with optional binding instead (`if let`).
+     6. Force unwrapping is a bad habit! Print `username` with optional binding instead (`if let`).
      
      7. Use the nil-coalescing operator to set the value of a variable to the value of `username`, or to `"Anonymous"` if `username` is `nil`.
  
