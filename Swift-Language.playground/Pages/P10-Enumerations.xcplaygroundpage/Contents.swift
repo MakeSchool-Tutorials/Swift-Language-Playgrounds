@@ -120,7 +120,7 @@ var ticTacToeBoard: [[GridSquare]] = [[.o, .x, .x],
                                       [.o, .x, .o],
                                       [.x, .o, .empty]]
 
-// Notice th board is type [[GridSquare]]. This is says the array contains arrays,
+// Notice the board is type [[GridSquare]]. This is says the array contains arrays,
 // and these nested arrays contain GridSquares.
  
  
