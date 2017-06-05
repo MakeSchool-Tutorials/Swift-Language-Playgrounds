@@ -67,7 +67,7 @@ taxi.wheels
 /*:
  Notice how even though we didn't define `color` and `wheels` within `Car`, they were inherited from `Vehicle`.
  
- Since we definitly don't want our `taxi`'s `color` to be black, let's define a new class called `Taxi` that has `color` as yellow by default and "sedan" as the default body style. Additionally, let's add the following to our `Taxi` class:
+ Since we definitely don't want our `taxi`'s `color` to be black, let's define a new class called `Taxi` that has `color` as yellow by default and "sedan" as the default body style. Additionally, let's add the following to our `Taxi` class:
  * A `fare` property.
  * A method called `getInfo` that describes our `Taxi`
  
@@ -238,7 +238,7 @@ someSize.height
 
     4. Some instructors are coaches. These instructors add a new property: `sport` property. This can be a string. Coach should have a method called `playSport()`. This method should print `"Lets play [sport]"`. `Coach` class should subclass `Instructor`!
 
-    5. You're making an app that keeps track of the weather. You need to wrap the weather data in a conveient package to pass around to various elements in your for display. Create a `struct` that has the following properties: `temperature`, `windSpeed`, `cloudPercentage`, `weatherDescription`. `struct` works well here since this is just data we are passing around!
+    5. You're making an app that keeps track of the weather. You need to wrap the weather data in a convenient package to pass around to various elements in your display. Create a `struct` that has the following properties: `temperature`, `windSpeed`, `cloudPercentage`, `weatherDescription`. `struct` works well here since this is just data we are passing around!
  
  */
 // Write your challenge code here:
