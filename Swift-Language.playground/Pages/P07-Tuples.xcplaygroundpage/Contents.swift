@@ -58,6 +58,7 @@ let yCoord = coordinate.y
 
 // Write your answers here: 
 
+import Foundation // you need Foundation imported for the sqrt() function
 
 
 
