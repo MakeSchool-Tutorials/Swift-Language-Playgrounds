@@ -83,7 +83,7 @@ for animal in barnResidents.characters {
 In Swift, strings follow the semantics of **value types**. That means that when you assign a string value to a variable, or pass a string value to a function, the destination gets its own "copy" of the string. If the new string is then modified, these changes have no effect on the original string. This is in contrast to **reference types**, where all variables refer to the same instance of an object, so changing the value for one changes it for all references.
  
 The reason "copy" is in quotes above is that, really, strings only **appear** to be copied when they are assigned. Behind the scenes, Swift is clever enough not to create an all-new instance of the string immediately. Only when a string is changed does Swift allocate the new memory for storing the modified string.
-After these lines executes, `tigersAndMoreBears` points to exactly the same memory as `tigersAndBears`:
+After these lines execute, `tigersAndMoreBears` points to exactly the same memory as `tigersAndBears`:
 */
 let tigersAndBears = "🐯🐯🐻🐻"
 var tigersAndMoreBears = tigersAndBears
