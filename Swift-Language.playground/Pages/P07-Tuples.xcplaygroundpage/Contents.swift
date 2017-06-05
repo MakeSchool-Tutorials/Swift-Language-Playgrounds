@@ -33,7 +33,7 @@ let yCoord = coordinate.y
 /*:
  ### Challenge
  
- Tuples allow you to group data together. Ideally the information is related. These not lists but share some similar features. A Tuple is not a dictionary though it shares some features. Use a Tuple when an array or dictionary is more than you need. Remember, arrays and dictionaries come with a lots of features like: count, append, insert() etc. Tuples don't have extra features they just group a handful of values together. 
+ Tuples allow you to group data together. Ideally the information is related. These are not lists but share some similar features. A Tuple is not a dictionary though it shares some features. Use a Tuple when an array or dictionary is more than you need. Remember, arrays and dictionaries come with a lots of features like: count, append, insert() etc. Tuples don't have extra features they just group a handful of values together. 
  
  Math is great, you like math, and math likes you! Why not use it when you program! When making games you'll often want to know the distance between two coordinates, or the angle. Locations in two-dimensional space are always defined by x and y coordnites. Tuples might be a good way to group these together in a convenient package.
  
