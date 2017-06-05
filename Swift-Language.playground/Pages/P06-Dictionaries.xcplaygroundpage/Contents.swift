@@ -77,7 +77,7 @@ var anotherDictionary: [String: Int] = [:]
      
      3. Imagine your app can send a message to an instructor. You need to get their full name from the dictionary first. Using their first name print the last name.
      
-     4. Since Swift can't be sure that a key exists in a dictionary values are retruned as optionals. Unwrap the optional from the previous example.
+     4. Since Swift can't be sure that a key exists in a dictionary, values are returned as optionals. Unwrap the optional from the previous example.
      
      5. Let's test that optional thing. Our app will crash if we ask for a value that has no corresponding key! Use print to get at a value with a nonexistent key. I dare you to unwrap that!
      
