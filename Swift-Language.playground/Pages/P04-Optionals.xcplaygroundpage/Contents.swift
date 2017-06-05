@@ -62,7 +62,7 @@ alwaysAString = "Now I have a value!"
 //: Now, when we print this string, it is implicitly unwrapped to the `String` value it contains:
 print(alwaysAString)
 /*: 
- The important takeaway here is that declaring a variable as implicitly unwrapped allows Swift to _automatically_ unwrap the value whenever it is used. This is the inverse of the usual situation: normally, we use the `!` to force-unwrap a value once we're sure it contains a value. With implicitly unwrapped optionals, we assert from the moment we declare the variable that it will _never_ be `nil` when it is used. That can save us a lot of typing (and visual clutter!) for variables that are accessed frequently. But it's important to be 100% sure that the variable is assigned before it's read the first time, because otherwise accessing it will result in crash.
+ The important takeaway here is that declaring a variable as implicitly unwrapped allows Swift to _automatically_ unwrap the value whenever it is used. This is the inverse of the usual situation: normally, we use the `!` to force-unwrap a value once we're sure it contains a value. With implicitly unwrapped optionals, we assert from the moment we declare the variable that it will _never_ be `nil` when it is used. That can save us a lot of typing (and visual clutter!) for variables that are accessed frequently. But it's important to be 100% sure that the variable is assigned before it's read the first time, because otherwise accessing it will result in a crash.
  */
 /*: 
 ## Calling Methods on Optionals
@@ -113,7 +113,7 @@ In this Playground we have looked at some of the capabilities of optionals in Sw
  
  - callout(Challenge): You are writing an app that deals with usernames retreived from the internet.
  
-     1. Imagine your app will display a username if availble. If no user is signed in you can display their name. This might be a good place for an optional. Define a variable named `username`, and make it type `String?` (optional)
+     1. Imagine your app will display a username if available. If no user is signed in you can display their name. This might be a good place for an optional. Define a variable named `username`, and make it type `String?` (optional)
      
      2. Print the value of `username`. You should get `nil`.
      
