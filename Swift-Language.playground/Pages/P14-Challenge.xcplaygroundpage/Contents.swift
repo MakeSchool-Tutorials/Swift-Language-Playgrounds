@@ -12,7 +12,7 @@ To start we'll make a simple card class. In fact, instead of a class, it might b
  
  If all that seems a little vague or weird, that's okay! Choosing a `struct` instead of a `class` or vice-versa won't actually matter too much in any case.
  
- Our card class will have two properties: `rank` and `suit`. There are 13 ranks: Ace, King, Queen, Jack and Ten through Two. And, of course, the 4 suits are Spades, Clubs, Diamonds and Hearts.
+ Our card struct will have two properties: `rank` and `suit`. There are 13 ranks: Ace, King, Queen, Jack and Ten through Two. And, of course, the 4 suits are Spades, Clubs, Diamonds and Hearts.
  
  There's a couple of ways we could represent this information. For example, we could use an `Int` to represent the rank, Two would be `2`, Ten would be `10`, Jack would be `11`, etc. Or maybe we could use strings, like: `"Ace"`, `"Queen"`, `"Diamonds"`. But we shouldn't do either of those things - there's a better way! Can you think of what it is?
 
@@ -47,7 +47,7 @@ So now, using the above `enum` code (you'll have to type it out below), create a
 /*:
 ## Deck Class
  
-Now that you've created your card class, it's time to create a `Deck` to hold them. A standard 52 card deck has one card of each rank and suit pair. The cards in a deck must also be ordered: can you think of a data structure to hold them?
+Now that you've created your card struct, it's time to create a `Deck` to hold them. A standard 52 card deck has one card of each rank and suit pair. The cards in a deck must also be ordered: can you think of a data structure to hold them?
  
 To start, your deck should have an empty initializer. Inside the initializer, create all 52 cards, and place them in the ordered data structure.
 */
