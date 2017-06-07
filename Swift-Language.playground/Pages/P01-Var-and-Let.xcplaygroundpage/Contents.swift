@@ -131,7 +131,7 @@ let Upcomingappversion = 1.1
  
  3. `var` -- Why? Your high score might be different each time you play, hopefully it's improving over time!
  
- 4. `let` -- Why? There are 26 letters in the alphabet this number will change.
+ 4. `let` -- Why? There are 26 letters in the alphabet and this number will not change.
  
  */
 
