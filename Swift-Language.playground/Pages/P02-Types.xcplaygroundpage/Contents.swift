@@ -24,7 +24,7 @@ var population: Int = 20
  - **`Double`** - A double precision decimal number.
  - **`Bool`** - A *boolean* value. Can be `true` or `false`.
  - **`Character`** - A single unicode character.
- - **`String`** - A collection of `Character`. Used to make words or sentences.
+ - **`String`** - A collection of `Character`s. Used to make words or sentences.
 */
 let slicesInAPie: Int = 8
 
@@ -94,12 +94,12 @@ let radians: Double = Double(angleInDegrees)  * pi / 180.0;
  
  - callout(Challenge): Imagine you are making a form in an app. There will be fields and other user interface elements that accept various types of data. Your app will accept the following information:
  
-     1. Your app needs to accept a username and hold it in a variable. What type is best for this variable?
-     2. Your app needs to accept a password what type should this be?
-     3. Your app needs to accept a variable that holds a user's shoe size what type?
-     4. Your app has a UIPicker that allows a visitor to choose their gender choices are M, F, O(ther), N(to specified).
-     5. Your app asks whether an applicant is older than 18? This is a check box or a switch, what type is best here?
-     6. Your app asks how many people are in your party? (Imagine a reservation form)
+        1. Your app needs to accept a username and hold it in a variable. What type is best for this variable?
+        2. Your app needs to accept a password. What type should this be?
+        3. Your app needs to accept a variable that holds a user's shoe size. What type is it?
+        4. Your app has a UIPicker that allows a visitor to choose their gender. The choices are M, F, O(ther), N(to specified). What type should these be?
+        5. Your app asks whether an applicant is older than 18. This is a check box or a switch, what type is best here?
+        6. Your app asks how many people are in your party. (Imagine a reservation form) What type is this?
  
  */
 
