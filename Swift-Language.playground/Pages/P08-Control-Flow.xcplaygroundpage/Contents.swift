@@ -56,7 +56,7 @@ while result < 60 {
 
 print(result)
 /*:
- `result` will be updated as follows: 1, 5, 25, 50, 125. Notice that the loop ran 4 times, but it stopped once `result` became more than 60.
+ `result` will be updated as follows: 5, 25, 125. Notice that the loop ran 3 times, but it stopped once `result` became more than 60.
 */
 /*:
  ## `switch` statement
