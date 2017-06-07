@@ -46,7 +46,7 @@ jessica.numStudents
 /*: 
  ### Challenge
  
- Static properties are good for situations where you have one value you wish to share amongst all instances of a class. You can also use static methods for to create "factory methods". Factory methods return a preconfigured instance of a class.
+ Static properties are good for situations where you have one value you wish to share amongst all instances of a class. You can also use static methods to create "factory methods". Factory methods return a preconfigured instance of a class.
  
  - callout(Challenge):
  
