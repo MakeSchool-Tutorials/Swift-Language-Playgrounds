@@ -213,13 +213,13 @@ oddCow
  Use the concepts covered in this section to test your knowledge and expand your skills.
  
  - callout(Challenge):
- Racing games are hot on the app store so we better make one fast! You will have all kinds vehicles in your game that will share some features. Better create a `Car` class. A car should have properties for `speed`, `fuel`, and `color`. (Speed: String, fuel: Int, color: String)
+ Racing games are hot on the app store so we better make one fast! You will have all kinds vehicles in your game that will share some features. Better create a `Car` class. A car should have properties for `speed`, `fuel` (with a value of 100), and `color`. (Speed: String, fuel: Int, color: String)
  
      Next create a subclass for each of the vehicle types listed below. These vehicles will all have speed, fuel and color since they inherit these from `Car`. They will also have values that are set when they are initialized.
      
          a. `RaceCar` - Race cars are always fast
-         b. `TowTruck` - Tow trucks are always slow
-         c. `DeliveryTruck` - Delivery trucks are slow and brown.
+         b. `TowTruck` - Tow trucks are always slow and they carry more fuel (value of 200)
+         c. `DeliveryTruck` - Delivery trucks are slow and brown and they carry more fuel (value of 200)
      
      Use initializers to make sure that each of the subclasses get the proper initial values!
      
