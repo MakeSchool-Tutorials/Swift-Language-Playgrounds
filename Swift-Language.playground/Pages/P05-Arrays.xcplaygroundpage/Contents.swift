@@ -184,6 +184,9 @@ currentTask += 1
 
  // 11
 print(array[currentTask])
+ 
+ // 12
+ print(array)
 */
 
 
