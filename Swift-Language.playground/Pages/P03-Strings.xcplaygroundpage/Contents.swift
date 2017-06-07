@@ -118,7 +118,7 @@ In this playground, you've learned about some of the basic and intermediate oper
          - music genre
          - verb
      
-     Each of these variables should a string.
+     Each of these variables should contain a string.
      
      2. Write a print statement containing the following string.
      
