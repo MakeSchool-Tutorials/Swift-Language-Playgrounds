@@ -63,7 +63,7 @@ Now that you have a `Deck` it's time to add some functionality. Create a a funct
  
 Once you've implemented `drawOne()`, uncomment the following code to test it out! You can show the debug area (⇧⌘Y) to see what's printed.
 */
-//func printCard(card: Card?) {
+//func printCard(_ card: Card?) {
 //    if let card = card {
 //        print("The random card is the \(card.rank) of \(card.suit)")
 //    } else {
