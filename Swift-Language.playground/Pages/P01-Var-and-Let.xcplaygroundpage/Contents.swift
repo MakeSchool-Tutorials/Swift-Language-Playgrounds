@@ -95,7 +95,7 @@ let Upcomingappversion = 1.1
 
 
 
-// 3) Define a variable that will hold the high score in the new game you are making. The current value is 5000. (You are going to break that score when you finsih this tutorial)
+// 3) Define a variable that will hold the high score in the new game you are making. The current value is 5000. (You are going to break that score when you finish this tutorial)
 
 
 
