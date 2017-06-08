@@ -97,7 +97,7 @@ let radians: Double = Double(angleInDegrees)  * pi / 180.0;
         1. Your app needs to accept a username and hold it in a variable. What type is best for this variable?
         2. Your app needs to accept a password. What type should this be?
         3. Your app needs to accept a variable that holds a user's shoe size. What type is it?
-        4. Your app has a UIPicker that allows a visitor to choose their gender. The choices are M, F, O(ther), N(to specified). What type should these be?
+        4. Your app has a UIPicker that allows a visitor to choose their gender. The choices are M, F, O(ther), N(ot specified). What type should these be?
         5. Your app asks whether an applicant is older than 18. This is a check box or a switch, what type is best here?
         6. Your app asks how many people are in your party. (Imagine a reservation form) What type is this?
  
