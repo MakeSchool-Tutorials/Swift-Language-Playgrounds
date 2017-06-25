@@ -259,6 +259,7 @@ class TowTruck: Car {
         super.init()
         self.color = color
         self.speed = "Slow"
+        self.fuel = 200
     }
 }
 
@@ -267,6 +268,7 @@ class DeliveryTruck: Car {
         super.init()
         self.color = "Brown"
         self.speed = "Slow"
+        self.fuel = 200
     }
 }
 */
