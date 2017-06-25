@@ -186,7 +186,13 @@ currentTask += 1
 print(array[currentTask])
  
  // 12
- print(array)
+for task in farm {
+    print(task)
+}
+
+// OR
+
+print(array)
 */
 
 
