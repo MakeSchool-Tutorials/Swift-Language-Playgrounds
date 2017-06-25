@@ -85,8 +85,6 @@ month.rawValue
     2. You're making a game. You need to keep track of the direction your player can move. Make enum to keep track of directions `up, right, down, and left`.
 
     3. Make a two-dimensional array that contains a completed game of Tic Tac Toe, where `x` has won. This means there needs to be three `x`s in a row.
-
-    4. Imagine you are creating an app that will organize todo items. You want to color code them and would rather use an enum rather than the raw color value. Writing `.orange`, is easier and more descriptive than using something like `#ff4411`! Create an enum containing the colors: `red`, `orange`, `blue`, and `green`.
  
  */
 // Write your challenge code here:
@@ -122,12 +120,6 @@ var ticTacToeBoard: [[GridSquare]] = [[.o, .x, .x],
 
 // Notice the board is type [[GridSquare]]. This is says the array contains arrays,
 // and these nested arrays contain GridSquares.
- 
- 
-// 4 
-enum Colors {
-    case red, orange, blue, green
-}
 */
 
 /*:
