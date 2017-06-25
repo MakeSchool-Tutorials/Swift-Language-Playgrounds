@@ -53,7 +53,7 @@ func randomInteger(upper: Int) -> Int {
 /*:
 ## Deck Class
  
-Now that you've created your card struct, it's time to create a `Deck` to hold them. A standard 52 card deck has one card of each rank and suit pair. The cards in a deck must also be ordered: can you think of a data structure to hold them?
+Now that you've created your card struct, it's time to create a `Deck` to hold them. A standard 52 card deck has one card of each rank and suit pair. The cards in a deck must also be ordered: can you think of a data structure to hold them? How will you generate all the possible card combinations? Maybe a nested for loop ;)
  
 To start, your deck should have an empty initializer. Inside the initializer, create all 52 cards, and place them in the ordered data structure.
 */
