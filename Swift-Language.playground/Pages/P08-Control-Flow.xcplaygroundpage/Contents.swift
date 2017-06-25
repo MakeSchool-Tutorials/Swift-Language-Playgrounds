@@ -88,15 +88,15 @@ default:
  Flow control is a major part of app development. The apps you write will need to make decisions all the time. The if else, and switch statement are two of the most important tools for flow control. 
  
 - callout(Challenge):
-    1. Imagine you are working on an app that will help you keep track of Make School instructors. Create an array that holds some of the instructors. Print all of the instructor names to the console.
+    1. Imagine you are working on an app that will help you keep track of Make School instructors. Create an array that holds the following instructors. Print all of the instructor names to the console.
 
-            Buffy, Xander, Willow, Rupert, Anya, Spike, Tara
+            Buffy, Xander, Willow, Rupert, Anya, Spike, Tara, Angel
 
-    2. Imagine that you can type the first letter of an instructor's name and get a list of all of the instructors whose name begins with the letter. Simulate this by creating a new array to hold the instructors whose name begins with the letter "D". Then create a for-in loop that will loop once for each instructor in the instructors array. Use an if-statement to look for names that beign with the letter "D" (Hint: you can use `hasPrefix()`, something like: `name.hasPrefix("D")`). Add each instructor you found to a new array and print that array after the loop to check your answer.
+    2. Imagine that you can type the first letter of an instructor's name and get a list of all of the instructors whose name begins with the letter. Simulate this by creating a new array to hold the instructors whose name begins with the letter "A". Then create a for-in loop that will loop once for each instructor in the instructors array. Use an if-statement to look for names that beign with the letter "A" (Hint: you can use `hasPrefix()`, something like: `name.hasPrefix("A")`). Add each instructor you found to a new array and print that array after the loop to check your answer.
  
-    3. Imagine you want to search for one instructor by name. Create a loop that will stop after it finds `"Dawn"`. Hint: you can use `break` to stop a loop early! Print a message stating that you have found `"Dawn"`.
+    3. Imagine you want to search for one instructor by name. Create a loop that will stop after it finds `"Spike"`. Hint: you can use `break` to stop a loop early! Print a message stating that you have found `"Spike"`.
 
-    4. Oops you just searched for an instructor not in the list? Your program needs to handle this how can you print a message saying `"[name] not found"`.
+    4. What if you searched for an instructor that was not in our list? Search the array for `"Dawn"`. Your program should handle this gracefully. How can you print a message saying `"[name] not found"`?
 
     5. Imagine you are making a game. There is an object that moves from one side of the screen to the other and then back. Game objects represent their horizontal position as an x value. The screen is `375` points wide. When `x` is less than `0` or when the `x` is greater than `375`, velocity needs to be inverted. For example if velocity was `10` and the `x` position of the object was `380` velocity would become `-10`. Recreate the example in code. Print velocity to show that it has changed to `-10`.
  
@@ -121,7 +121,7 @@ default:
 
 /*
 // 1
-var instructors = ["Buffy", "Xander", "Willow", "Rupert", "Anya", "Spike", "Tara"]
+var instructors = ["Buffy", "Xander", "Willow", "Rupert", "Anya", "Spike", "Tara", "Angel"]
 for instructor in instructors {
     print(instructor)
 }
@@ -129,7 +129,7 @@ for instructor in instructors {
 // 2
 var foundInstructors = [String]()
 for instructor in instructors {
-    if instructor.hasPrefix("D") {
+    if instructor.hasPrefix("A") {
         foundInstructors.append(instructor)
     }
 }
