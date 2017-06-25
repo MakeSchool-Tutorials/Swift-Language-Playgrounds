@@ -38,7 +38,13 @@ Both enumerations come with an `allValues()` function, which returns an array co
 
  
 So now, using the above `enum` code (you'll have to type it out below), create a Card `struct` with `suit` and `rank` properties, and an initializer that accepts `suit` and `rank` parameters.
+
+You'll probably also find the following function useful in this exercise. It allows you to generate a random number between `0` and `upper - 1`. Please do note, the random number will *never* equal upper.
 */
+func randomInteger(upper: Int) -> Int {
+    return Int(arc4random_uniform(UInt32(upper)))
+}
+
 /* Place your code here! */
 
 
@@ -58,9 +64,7 @@ To start, your deck should have an empty initializer. Inside the initializer, cr
 
 /*:
 Now that you have a `Deck` it's time to add some functionality. Create a a function in your `Deck` class above called `drawOne()`. `drawOne()` should return a random card from the deck. Don't forget to remove that card from your internal deck data structure! 
- 
- To help draw a random card, you'll probably want to use the built-in `arc4random_uniform()` function. `arc4random_unform(upperBound)` will generate a number from 0 up to but less than `upperBound`. One caveat is that `arc4random_uniform()` only likes to work with unsigned 32-bit integers (`UInt32`). So you'll need to do some casting between `UInt32` and `Int` to make it work. To access `arc4random_uniform()` you'll first need to `import Foundation`.
- 
+  
 Once you've implemented `drawOne()`, uncomment the following code to test it out! You can show the debug area (⇧⌘Y) to see what's printed.
 */
 
