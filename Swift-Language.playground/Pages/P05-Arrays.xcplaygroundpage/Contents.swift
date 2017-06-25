@@ -113,7 +113,7 @@ let removedItem = mutableGroceryList.remove(at: 0)
      
      2. Well, Ma's given you more chores. Append `"Churn butter"` to the end of your list.
      
-     3. Turns out you also need to `"Call the Cows"`. This needs to happen at the end of the day. Add it to the end of your array.
+     3. Turns out you also need to `"Call the Cows"` and `"Shear the Sheep"`. Both of these needs to happen at the end of the day. Add it to the end of your array.
      
      4. Often you need to choose an item from an array. You just got up, your app needs to print a message with the first task! Print the first task in the array. 
      
@@ -159,7 +159,7 @@ var array = ["Wake Up", "Wash the dishes", "Milk the cows"]
 array.append("Churn butter")
 
  // 3
-array += ["Call the Cows"]
+array += ["Call the Cows", "Shear the Sheep"]
 
  // 4
 print(array[0]) // Remember 0 is the first index!
