@@ -193,7 +193,7 @@ someSize.height
  
  ### When to use a struct instead of a class?
  
- When you are working with the actual representation of any UI elements, you will always use a class. Why? Labels (`UILabel`), image views (`UIImageView`), table view cells (`UITableViewCell`), and sprites for games (`SKSpriteNode`) will all be classes since your custom versions will inherit from the one's provided by Apple. Only classes support inheritance!
+ When you are working with the actual representation of any UI elements, you will always use a class. Why? Labels (`UILabel`), image views (`UIImageView`), table view cells (`UITableViewCell`), and sprites for games (`SKSpriteNode`) will all be classes since your custom versions will inherit from the ones provided by Apple. Only classes support inheritance!
  
  The properties of these UI elements are often represented by structs! Things like color (`UIColor`), position (`CGPoint`), and size (`CGSize`) are all structs. Anything type from core graphics library (starts with `CG`) will be a struct and you'll use these types often to describe the properties of UI elements.
  
