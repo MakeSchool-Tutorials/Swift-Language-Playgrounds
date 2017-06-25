@@ -79,12 +79,14 @@ import Foundation // you need Foundation imported for the sqrt() function
 let startCoord = (x: 5.1, y: 8.3) // Using a Double here means you don't have to convert the value below.
 
 // 2)
-let endCoord = (x: 375, y: 667) // These values are type Int
+let endCoord = (x: 375, y: 667) // These values are type Int unless you cast or add .0
 
 // 3) something like this though your answer might look different
 import Foundation
 
 // endCoord did not use a Double value so we need to convert the values to Double!
+// this can be avoided by adding .0 to the assignment so both Tuples are (Double, Double)
+// let endCoord = (x: 375.0, y: 667.0)
 let xDiff = Double(endCoord.x) - startCoord.x
 let yDiff = Double(endCoord.y) - startCoord.y
 let length = sqrt(xDiff * xDiff + yDiff * yDiff)
