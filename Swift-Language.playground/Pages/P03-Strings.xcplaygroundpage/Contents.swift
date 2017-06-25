@@ -110,7 +110,7 @@ In this playground, you've learned about some of the basic and intermediate oper
  
  - callout(Challenge): Imagine you are writing a new app that will write personal ads. You don't need to write a personal ad but you have a few friends that could use this. You will supply key words, and the app will write the ad.
  
-     1. Define 4 variables that each contain a string. Set the value to any word that matches the variable name:
+     1. Define 6 variables that each contain a string. Set the value to any word that matches the variable name:
          - adjective
          - location
          - animal
