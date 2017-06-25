@@ -63,6 +63,7 @@ Now that you have a `Deck` it's time to add some functionality. Create a a funct
  
 Once you've implemented `drawOne()`, uncomment the following code to test it out! You can show the debug area (⇧⌘Y) to see what's printed.
 */
+
 //func printCard(_ card: Card?) {
 //    if let card = card {
 //        print("The random card is the \(card.rank) of \(card.suit)")
@@ -71,12 +72,13 @@ Once you've implemented `drawOne()`, uncomment the following code to test it out
 //    }
 //}
 //
-//let testDeck = Deck()
+//var testDeck = Deck()
 //
 //for _ in 1...55 {
 //    let card = testDeck.drawOne()
 //    printCard(card)
 //}
+
 /*:
 - important:
  Does the test code above create an error?  If so, it's likely because you forgot to account for the case where there's no cards left in the deck to draw! Change your `drawOne()` method so that it returns `nil` if there's no cards left to draw.
