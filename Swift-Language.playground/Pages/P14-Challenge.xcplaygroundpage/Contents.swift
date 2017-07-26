@@ -41,6 +41,8 @@ So now, using the above `enum` code (you'll have to type it out below), create a
 
 You'll probably also find the following function useful in this exercise. It allows you to generate a random number between `0` and `upper - 1`. Please do note, the random number will *never* equal upper.
 */
+
+import Foundation
 func randomInteger(upper: Int) -> Int {
     return Int(arc4random_uniform(UInt32(upper)))
 }
