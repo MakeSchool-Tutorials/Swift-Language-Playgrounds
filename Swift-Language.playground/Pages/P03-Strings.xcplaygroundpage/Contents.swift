@@ -8,7 +8,6 @@ You're probably familiar with the idea of strings from other programming languag
 The simplest kind of string to create is a _string literal_. This is a string whose value is known at compile-time, and it is written as a sequence of characters surrounded by double quotes:
 */
 let greeting = "Hello, Make School!"
-/*: */
 /*:
 ## Putting Strings Together and Tearing Them Apart
 
@@ -45,15 +44,13 @@ let farewell = "See you in the \(nextSeason)"
 //: But it doesn't stop there. In addition to variable names, you can include arbitrary expressions inside the interpolation segment:
 let radius: Double = 3
 let complexInterpolation = "The area of my circle is \(Double.pi * radius * radius)"
-/*: */
 /*:
 ## Using `print` for Debugging
 Sometimes things go wrong in our programs. Sometimes you just want to see how a value is changing as your program executes. When we aren't in the context of a playground, we don't have the benefit of the side pane showing us these intermediate values. At times like these, we need a way to print to Xcode's debug console. We can do this with Swift's `print` function. It takes a string and writes it to the debug area so we can see what's going on.
 */
 let answer = 42
 print("The answer is \(answer)")
-/*: */
-/*: 
+/*:
 ## Indexing into Strings
 Unlike many other languages, Swift does not allow you to extract a single character from a string by indexing into it:
 */
@@ -67,7 +64,6 @@ Instead, you need to use the `index` method, which uses special knowledge about 
 */
 let index = barnResidents.index(barnResidents.startIndex, offsetBy: position)
 let realPig = barnResidents[index]
-/*: */
 /*:
 ## Iterating Over Strings
 
@@ -76,7 +72,6 @@ We can use a `for` loop to get each `Character` in sequence from a `String`:
 for animal in barnResidents.characters {
     let statusReport = "\(animal) is in the barn."
 }
-/*: */
 /*:
 ## `String` is a Value Type
 
@@ -90,8 +85,7 @@ var tigersAndMoreBears = tigersAndBears
 
 // After this line executes, the two strings point to two distinct areas in memory:
 tigersAndMoreBears += "🐨🐨"
-/*: */
-/*: 
+/*:
 ## Conclusion
 
 In this playground, you've learned about some of the basic and intermediate operations you can perform on strings in Swift: creating literals, concatenating strings together and splitting them apart, string interpolation, and indexing into strings. There are many more things you can do with Strings, so explore the Swift standard library, and remember that you can also use methods from Cocoa's `NSString` as well. There are some great utilities for manipulating strings in there!

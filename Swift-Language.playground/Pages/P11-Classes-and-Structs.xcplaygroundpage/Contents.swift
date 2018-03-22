@@ -120,7 +120,6 @@ coolTaxi.color = "pink"
 
 otherTaxi.color
 coolTaxi.color
-/*: */
 /*:
  ## Structures
  We can use structures to group related data. Tuples can do this too, but unlike tuples, structures can also have methods. For example, let's define a `struct` (short for structure) that can hold the size of a car.
