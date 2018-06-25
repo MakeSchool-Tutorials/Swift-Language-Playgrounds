@@ -69,8 +69,9 @@ let realPig = barnResidents[index]
 
 We can use a `for` loop to get each `Character` in sequence from a `String`:
 */
-for animal in barnResidents.characters {
+for animal in barnResidents {
     let statusReport = "\(animal) is in the barn."
+    print(statusReport)
 }
 /*:
 ## `String` is a Value Type
